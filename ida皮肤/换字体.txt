@@ -1,4 +1,0 @@
-QWidget
-{
-	font-family: 'Monaco';
-}

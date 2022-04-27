@@ -1,0 +1,7 @@
+放在IDA的themes下解压即可
+
+换全局字体：
+QWidget
+{
+	font-family: 'Monaco';
+}

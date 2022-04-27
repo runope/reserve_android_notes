@@ -1,0 +1,1 @@
+将两个文件放入IDA的plugins文件夹，然后在ida的python命令行!pip3 install yara-python
