@@ -1,0 +1,192 @@
+     0 Lbbbbbbbb1;
+		direct_method_id:0x00000008, code_off:0x0001b8a0 | <init>()V
+     1 Lcom/example/test/ArrayUtils;
+		direct_method_id:0x0000000a, code_off:0x0001b8b8 | <clinit>()V
+		direct_method_id:0x0000000b, code_off:0x0001b8d4 | <init>()V
+		direct_method_id:0x0000000c, code_off:0x0001b8ec | isSameLength([Ljava/lang/Object;[Ljava/lang/Object;)Z
+     2 Lcom/example/test/BuildConfig;
+		direct_method_id:0x0000000d, code_off:0x0001b930 | <init>()V
+     3 Lcom/example/test/ClassUtils;
+		direct_method_id:0x0000000e, code_off:0x0001b948 | <clinit>()V
+		direct_method_id:0x0000000f, code_off:0x0001ba7c | <init>()V
+		direct_method_id:0x00000010, code_off:0x0001ba94 | getClass(Ljava/lang/ClassLoader;Ljava/lang/String;Z)Ljava/lang/Class;
+		direct_method_id:0x00000011, code_off:0x0001bb80 | isAssignable(Ljava/lang/Class;Ljava/lang/Class;)Z
+		direct_method_id:0x00000012, code_off:0x0001bba8 | isAssignable(Ljava/lang/Class;Ljava/lang/Class;Z)Z
+		direct_method_id:0x00000013, code_off:0x0001be1c | isAssignable([Ljava/lang/Class;[Ljava/lang/Class;Z)Z
+		direct_method_id:0x00000014, code_off:0x0001be74 | primitiveToWrapper(Ljava/lang/Class;)Ljava/lang/Class;
+		direct_method_id:0x00000015, code_off:0x0001bea8 | toCanonicalName(Ljava/lang/String;)Ljava/lang/String;
+		direct_method_id:0x00000016, code_off:0x0001bf60 | wrapperToPrimitive(Ljava/lang/Class;)Ljava/lang/Class;
+     4 Lcom/example/test/JavaVersion;
+		direct_method_id:0x00000017, code_off:0x0001bf84 | <clinit>()V
+		direct_method_id:0x00000018, code_off:0x0001c0f4 | <init>(Ljava/lang/String;IFLjava/lang/String;)V
+		direct_method_id:0x0000001a, code_off:0x0001c114 | get(Ljava/lang/String;)Lcom/example/test/JavaVersion;
+		direct_method_id:0x0000001b, code_off:0x0001c1f0 | getJavaVersion(Ljava/lang/String;)Lcom/example/test/JavaVersion;
+		direct_method_id:0x0000001d, code_off:0x0001c20c | valueOf(Ljava/lang/String;)Lcom/example/test/JavaVersion;
+		direct_method_id:0x0000001e, code_off:0x0001c230 | values()[Lcom/example/test/JavaVersion;
+		virtual_method_id:0x00000019, code_off:0x0001c254 | atLeast(Lcom/example/test/JavaVersion;)Z
+		virtual_method_id:0x0000001c, code_off:0x0001c27c | toString()Ljava/lang/String;
+     5 Lcom/example/test/MainActivity;
+		direct_method_id:0x0000001f, code_off:0x0001c294 | <clinit>()V
+		direct_method_id:0x00000020, code_off:0x0001c2b0 | <init>()V
+		direct_method_id:0x00000024, code_off:0x00000000 | parseClassNames([B)[Ljava/lang/String;
+		virtual_method_id:0x00000023, code_off:0x0001c2c8 | onCreate(Landroid/os/Bundle;)V
+		virtual_method_id:0x00000026, code_off:0x00000000 | stringFromJNI()Ljava/lang/String;
+     6 Lcom/example/test/MemberUtils;
+		direct_method_id:0x00000027, code_off:0x0001c300 | <clinit>()V
+		direct_method_id:0x00000028, code_off:0x0001c364 | <init>()V
+		direct_method_id:0x00000029, code_off:0x0001c37c | compareParameterTypes([Ljava/lang/Class;[Ljava/lang/Class;[Ljava/lang/Class;)I
+		direct_method_id:0x0000002a, code_off:0x0001c3b8 | getObjectTransformationCost(Ljava/lang/Class;Ljava/lang/Class;)F
+		direct_method_id:0x0000002b, code_off:0x0001c42c | getPrimitivePromotionCost(Ljava/lang/Class;Ljava/lang/Class;)F
+		direct_method_id:0x0000002c, code_off:0x0001c494 | getTotalTransformationCost([Ljava/lang/Class;[Ljava/lang/Class;)F
+     7 Lcom/example/test/R$anim;
+		direct_method_id:0x0000002d, code_off:0x0001c4c8 | <init>()V
+     8 Lcom/example/test/R$attr;
+		direct_method_id:0x0000002e, code_off:0x0001c4e0 | <init>()V
+     9 Lcom/example/test/R$bool;
+		direct_method_id:0x0000002f, code_off:0x0001c4f8 | <init>()V
+    10 Lcom/example/test/R$color;
+		direct_method_id:0x00000030, code_off:0x0001c510 | <init>()V
+    11 Lcom/example/test/R$dimen;
+		direct_method_id:0x00000031, code_off:0x0001c528 | <init>()V
+    12 Lcom/example/test/R$drawable;
+		direct_method_id:0x00000032, code_off:0x0001c540 | <init>()V
+    13 Lcom/example/test/R$id;
+		direct_method_id:0x00000033, code_off:0x0001c558 | <init>()V
+    14 Lcom/example/test/R$integer;
+		direct_method_id:0x00000034, code_off:0x0001c570 | <init>()V
+    15 Lcom/example/test/R$interpolator;
+		direct_method_id:0x00000035, code_off:0x0001c588 | <init>()V
+    16 Lcom/example/test/R$layout;
+		direct_method_id:0x00000036, code_off:0x0001c5a0 | <init>()V
+    17 Lcom/example/test/R$mipmap;
+		direct_method_id:0x00000037, code_off:0x0001c5b8 | <init>()V
+    18 Lcom/example/test/R$string;
+		direct_method_id:0x00000038, code_off:0x0001c5d0 | <init>()V
+    19 Lcom/example/test/R$style;
+		direct_method_id:0x00000039, code_off:0x0001c5e8 | <init>()V
+    20 Lcom/example/test/R$styleable;
+		direct_method_id:0x0000003a, code_off:0x0001c600 | <clinit>()V
+		direct_method_id:0x0000003b, code_off:0x0001d2f0 | <init>()V
+    21 Lcom/example/test/R;
+		direct_method_id:0x0000003c, code_off:0x0001d308 | <init>()V
+    22 Lcom/example/test/StringUtils;
+		direct_method_id:0x0000003d, code_off:0x0001d320 | <init>()V
+		direct_method_id:0x0000003e, code_off:0x0001d338 | deleteWhitespace(Ljava/lang/String;)Ljava/lang/String;
+		direct_method_id:0x0000003f, code_off:0x0001d3ac | isEmpty(Ljava/lang/CharSequence;)Z
+    23 Lcom/example/test/SystemUtils;
+		direct_method_id:0x00000040, code_off:0x0001d3d8 | <clinit>()V
+		direct_method_id:0x00000041, code_off:0x0001d40c | <init>()V
+		direct_method_id:0x00000042, code_off:0x0001d424 | getSystemProperty(Ljava/lang/String;)Ljava/lang/String;
+		direct_method_id:0x00000043, code_off:0x0001d484 | isJavaVersionAtLeast(Lcom/example/test/JavaVersion;)Z
+    24 Lcom/example/test/UnPackXC_MethodHook;
+		direct_method_id:0x00000044, code_off:0x0001d4a4 | <init>()V
+    25 Lcom/example/test/UnPackXposedHelpers$1;
+		direct_method_id:0x00000045, code_off:0x0001d4bc | <init>()V
+		virtual_method_id:0x00000046, code_off:0x0001d4d4 | initialValue()Ljava/lang/Object;
+		virtual_method_id:0x00000047, code_off:0x0001d4f0 | initialValue()Ljava/util/concurrent/atomic/AtomicInteger;
+    26 Lcom/example/test/UnPackXposedHelpers$ClassNotFoundError;
+		direct_method_id:0x00000048, code_off:0x0001d50c | <init>(Ljava/lang/String;Ljava/lang/Throwable;)V
+		direct_method_id:0x00000049, code_off:0x0001d524 | <init>(Ljava/lang/Throwable;)V
+    27 Lcom/example/test/UnPackXposedHelpers$InvocationTargetError;
+		direct_method_id:0x0000004a, code_off:0x0001d53c | <init>(Ljava/lang/Throwable;)V
+    28 Lcom/example/test/UnPackXposedHelpers;
+		direct_method_id:0x0000004b, code_off:0x0001d554 | <clinit>()V
+		direct_method_id:0x0000004c, code_off:0x0001d5b8 | <init>()V
+		direct_method_id:0x0000004d, code_off:0x0001d5d0 | assetAsByteArray(Landroid/content/res/Resources;Ljava/lang/String;)[B
+		direct_method_id:0x0000004e, code_off:0x0001d5fc | callMethod(Ljava/lang/Object;Ljava/lang/String;[Ljava/lang/Class;[Ljava/lang/Object;)Ljava/lang/Object;
+		direct_method_id:0x0000004f, code_off:0x0001d668 | callMethod(Ljava/lang/Object;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/Object;
+		direct_method_id:0x00000050, code_off:0x0001d6d4 | callStaticMethod(Ljava/lang/Class;Ljava/lang/String;[Ljava/lang/Class;[Ljava/lang/Object;)Ljava/lang/Object;
+		direct_method_id:0x00000051, code_off:0x0001d738 | callStaticMethod(Ljava/lang/Class;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/Object;
+		direct_method_id:0x00000052, code_off:0x0001d79c | closeSilently(Ldalvik/system/DexFile;)V
+		direct_method_id:0x00000053, code_off:0x0001d7c4 | closeSilently(Ljava/io/Closeable;)V
+		direct_method_id:0x00000054, code_off:0x0001d7ec | closeSilently(Ljava/util/zip/ZipFile;)V
+		direct_method_id:0x00000055, code_off:0x0001d814 | decrementMethodDepth(Ljava/lang/String;)I
+		direct_method_id:0x00000056, code_off:0x0001d844 | fileContains(Ljava/io/File;Ljava/lang/String;)Z
+		direct_method_id:0x00000057, code_off:0x0001d8bc | findClass(Ljava/lang/String;Ljava/lang/ClassLoader;)Ljava/lang/Class;
+		direct_method_id:0x00000058, code_off:0x0001d8fc | findClassIfExists(Ljava/lang/String;Ljava/lang/ClassLoader;)Ljava/lang/Class;
+		direct_method_id:0x00000059, code_off:0x0001d928 | findConstructorBestMatch(Ljava/lang/Class;[Ljava/lang/Class;)Ljava/lang/reflect/Constructor;
+		direct_method_id:0x0000005a, code_off:0x0001da48 | findConstructorBestMatch(Ljava/lang/Class;[Ljava/lang/Class;[Ljava/lang/Object;)Ljava/lang/reflect/Constructor;
+		direct_method_id:0x0000005b, code_off:0x0001da90 | findConstructorBestMatch(Ljava/lang/Class;[Ljava/lang/Object;)Ljava/lang/reflect/Constructor;
+		direct_method_id:0x0000005c, code_off:0x0001dab4 | findConstructorExact(Ljava/lang/Class;[Ljava/lang/Class;)Ljava/lang/reflect/Constructor;
+		direct_method_id:0x0000005d, code_off:0x0001db70 | findConstructorExact(Ljava/lang/Class;[Ljava/lang/Object;)Ljava/lang/reflect/Constructor;
+		direct_method_id:0x0000005e, code_off:0x0001db9c | findConstructorExact(Ljava/lang/String;Ljava/lang/ClassLoader;[Ljava/lang/Object;)Ljava/lang/reflect/Constructor;
+		direct_method_id:0x0000005f, code_off:0x0001dbc8 | findConstructorExactIfExists(Ljava/lang/Class;[Ljava/lang/Object;)Ljava/lang/reflect/Constructor;
+		direct_method_id:0x00000060, code_off:0x0001dbf8 | findConstructorExactIfExists(Ljava/lang/String;Ljava/lang/ClassLoader;[Ljava/lang/Object;)Ljava/lang/reflect/Constructor;
+		direct_method_id:0x00000061, code_off:0x0001dc28 | findField(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/reflect/Field;
+		direct_method_id:0x00000062, code_off:0x0001dcdc | findFieldIfExists(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/reflect/Field;
+		direct_method_id:0x00000063, code_off:0x0001dd08 | findFieldRecursiveImpl(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/reflect/Field;
+		direct_method_id:0x00000064, code_off:0x0001dd6c | findFirstFieldByExactType(Ljava/lang/Class;Ljava/lang/Class;)Ljava/lang/reflect/Field;
+		direct_method_id:0x00000065, code_off:0x0001de10 | findMethodBestMatch(Ljava/lang/Class;Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
+		direct_method_id:0x00000066, code_off:0x0001df84 | findMethodBestMatch(Ljava/lang/Class;Ljava/lang/String;[Ljava/lang/Class;[Ljava/lang/Object;)Ljava/lang/reflect/Method;
+		direct_method_id:0x00000067, code_off:0x0001dfcc | findMethodBestMatch(Ljava/lang/Class;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/reflect/Method;
+		direct_method_id:0x00000068, code_off:0x0001dff0 | findMethodExact(Ljava/lang/Class;Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
+		direct_method_id:0x00000069, code_off:0x0001e0bc | findMethodExact(Ljava/lang/Class;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/reflect/Method;
+		direct_method_id:0x0000006a, code_off:0x0001e0e8 | findMethodExact(Ljava/lang/String;Ljava/lang/ClassLoader;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/reflect/Method;
+		direct_method_id:0x0000006b, code_off:0x0001e114 | findMethodExactIfExists(Ljava/lang/Class;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/reflect/Method;
+		direct_method_id:0x0000006c, code_off:0x0001e144 | findMethodExactIfExists(Ljava/lang/String;Ljava/lang/ClassLoader;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/reflect/Method;
+		direct_method_id:0x0000006d, code_off:0x0001e174 | findMethodsByExactParameters(Ljava/lang/Class;Ljava/lang/Class;[Ljava/lang/Class;)[Ljava/lang/reflect/Method;
+		direct_method_id:0x0000006e, code_off:0x0001e21c | getAdditionalInstanceField(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
+		direct_method_id:0x0000006f, code_off:0x0001e2b0 | getAdditionalStaticField(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Object;
+		direct_method_id:0x00000070, code_off:0x0001e2cc | getAdditionalStaticField(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
+		direct_method_id:0x00000071, code_off:0x0001e2f0 | getBooleanField(Ljava/lang/Object;Ljava/lang/String;)Z
+		direct_method_id:0x00000072, code_off:0x0001e344 | getByteField(Ljava/lang/Object;Ljava/lang/String;)B
+		direct_method_id:0x00000073, code_off:0x0001e398 | getCharField(Ljava/lang/Object;Ljava/lang/String;)C
+		direct_method_id:0x00000074, code_off:0x0001e3ec | getClassesAsArray([Ljava/lang/Class;)[Ljava/lang/Class;
+		direct_method_id:0x00000075, code_off:0x0001e400 | getDoubleField(Ljava/lang/Object;Ljava/lang/String;)D
+		direct_method_id:0x00000076, code_off:0x0001e454 | getFirstParameterIndexByType(Ljava/lang/reflect/Member;Ljava/lang/Class;)I
+		direct_method_id:0x00000077, code_off:0x0001e4e4 | getFloatField(Ljava/lang/Object;Ljava/lang/String;)F
+		direct_method_id:0x00000078, code_off:0x0001e538 | getIntField(Ljava/lang/Object;Ljava/lang/String;)I
+		direct_method_id:0x00000079, code_off:0x0001e58c | getLongField(Ljava/lang/Object;Ljava/lang/String;)J
+		direct_method_id:0x0000007a, code_off:0x0001e5e0 | getMD5Sum(Ljava/lang/String;)Ljava/lang/String;
+		direct_method_id:0x0000007b, code_off:0x0001e660 | getMethodDepth(Ljava/lang/String;)I
+		direct_method_id:0x0000007c, code_off:0x0001e690 | getMethodDepthCounter(Ljava/lang/String;)Ljava/lang/ThreadLocal;
+		direct_method_id:0x0000007d, code_off:0x0001e6e4 | getObjectField(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
+		direct_method_id:0x0000007e, code_off:0x0001e738 | getOverriddenMethod(Ljava/lang/reflect/Method;)Ljava/lang/reflect/Method;
+		direct_method_id:0x0000007f, code_off:0x0001e7d4 | getOverriddenMethods(Ljava/lang/Class;)Ljava/util/Set;
+		direct_method_id:0x00000080, code_off:0x0001e81c | getParameterClasses(Ljava/lang/ClassLoader;[Ljava/lang/Object;)[Ljava/lang/Class;
+		direct_method_id:0x00000081, code_off:0x0001e8b4 | getParameterIndexByType(Ljava/lang/reflect/Member;Ljava/lang/Class;)I
+		direct_method_id:0x00000082, code_off:0x0001e990 | getParameterTypes([Ljava/lang/Object;)[Ljava/lang/Class;
+		direct_method_id:0x00000083, code_off:0x0001e9d4 | getParametersString([Ljava/lang/Class;)Ljava/lang/String;
+		direct_method_id:0x00000084, code_off:0x0001ea50 | getShortField(Ljava/lang/Object;Ljava/lang/String;)S
+		direct_method_id:0x00000085, code_off:0x0001eaa4 | getStaticBooleanField(Ljava/lang/Class;Ljava/lang/String;)Z
+		direct_method_id:0x00000086, code_off:0x0001eaf4 | getStaticByteField(Ljava/lang/Class;Ljava/lang/String;)B
+		direct_method_id:0x00000087, code_off:0x0001eb44 | getStaticCharField(Ljava/lang/Class;Ljava/lang/String;)C
+		direct_method_id:0x00000088, code_off:0x0001eb94 | getStaticDoubleField(Ljava/lang/Class;Ljava/lang/String;)D
+		direct_method_id:0x00000089, code_off:0x0001ebe4 | getStaticFloatField(Ljava/lang/Class;Ljava/lang/String;)F
+		direct_method_id:0x0000008a, code_off:0x0001ec34 | getStaticIntField(Ljava/lang/Class;Ljava/lang/String;)I
+		direct_method_id:0x0000008b, code_off:0x0001ec84 | getStaticLongField(Ljava/lang/Class;Ljava/lang/String;)J
+		direct_method_id:0x0000008c, code_off:0x0001ecd4 | getStaticObjectField(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Object;
+		direct_method_id:0x0000008d, code_off:0x0001ed24 | getStaticShortField(Ljava/lang/Class;Ljava/lang/String;)S
+		direct_method_id:0x0000008e, code_off:0x0001ed74 | getSurroundingThis(Ljava/lang/Object;)Ljava/lang/Object;
+		direct_method_id:0x0000008f, code_off:0x0001ed94 | incrementMethodDepth(Ljava/lang/String;)I
+		direct_method_id:0x00000090, code_off:0x0001edc4 | inputStreamToByteArray(Ljava/io/InputStream;)[B
+		direct_method_id:0x00000091, code_off:0x0001ee0c | newInstance(Ljava/lang/Class;[Ljava/lang/Class;[Ljava/lang/Object;)Ljava/lang/Object;
+		direct_method_id:0x00000092, code_off:0x0001ee88 | newInstance(Ljava/lang/Class;[Ljava/lang/Object;)Ljava/lang/Object;
+		direct_method_id:0x00000093, code_off:0x0001ef04 | removeAdditionalInstanceField(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
+		direct_method_id:0x00000094, code_off:0x0001ef98 | removeAdditionalStaticField(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Object;
+		direct_method_id:0x00000095, code_off:0x0001efb4 | removeAdditionalStaticField(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
+		direct_method_id:0x00000096, code_off:0x0001efd8 | setAdditionalInstanceField(Ljava/lang/Object;Ljava/lang/String;Ljava/lang/Object;)Ljava/lang/Object;
+		direct_method_id:0x00000097, code_off:0x0001f07c | setAdditionalStaticField(Ljava/lang/Class;Ljava/lang/String;Ljava/lang/Object;)Ljava/lang/Object;
+		direct_method_id:0x00000098, code_off:0x0001f098 | setAdditionalStaticField(Ljava/lang/Object;Ljava/lang/String;Ljava/lang/Object;)Ljava/lang/Object;
+		direct_method_id:0x00000099, code_off:0x0001f0bc | setBooleanField(Ljava/lang/Object;Ljava/lang/String;Z)V
+		direct_method_id:0x0000009a, code_off:0x0001f110 | setByteField(Ljava/lang/Object;Ljava/lang/String;B)V
+		direct_method_id:0x0000009b, code_off:0x0001f164 | setCharField(Ljava/lang/Object;Ljava/lang/String;C)V
+		direct_method_id:0x0000009c, code_off:0x0001f1b8 | setDoubleField(Ljava/lang/Object;Ljava/lang/String;D)V
+		direct_method_id:0x0000009d, code_off:0x0001f20c | setFloatField(Ljava/lang/Object;Ljava/lang/String;F)V
+		direct_method_id:0x0000009e, code_off:0x0001f260 | setIntField(Ljava/lang/Object;Ljava/lang/String;I)V
+		direct_method_id:0x0000009f, code_off:0x0001f2b4 | setLongField(Ljava/lang/Object;Ljava/lang/String;J)V
+		direct_method_id:0x000000a0, code_off:0x0001f308 | setObjectField(Ljava/lang/Object;Ljava/lang/String;Ljava/lang/Object;)V
+		direct_method_id:0x000000a1, code_off:0x0001f35c | setShortField(Ljava/lang/Object;Ljava/lang/String;S)V
+		direct_method_id:0x000000a2, code_off:0x0001f3b0 | setStaticBooleanField(Ljava/lang/Class;Ljava/lang/String;Z)V
+		direct_method_id:0x000000a3, code_off:0x0001f3fc | setStaticByteField(Ljava/lang/Class;Ljava/lang/String;B)V
+		direct_method_id:0x000000a4, code_off:0x0001f448 | setStaticCharField(Ljava/lang/Class;Ljava/lang/String;C)V
+		direct_method_id:0x000000a5, code_off:0x0001f494 | setStaticDoubleField(Ljava/lang/Class;Ljava/lang/String;D)V
+		direct_method_id:0x000000a6, code_off:0x0001f4e0 | setStaticFloatField(Ljava/lang/Class;Ljava/lang/String;F)V
+		direct_method_id:0x000000a7, code_off:0x0001f52c | setStaticIntField(Ljava/lang/Class;Ljava/lang/String;I)V
+		direct_method_id:0x000000a8, code_off:0x0001f578 | setStaticLongField(Ljava/lang/Class;Ljava/lang/String;J)V
+		direct_method_id:0x000000a9, code_off:0x0001f5c4 | setStaticObjectField(Ljava/lang/Class;Ljava/lang/String;Ljava/lang/Object;)V
+		direct_method_id:0x000000aa, code_off:0x0001f610 | setStaticShortField(Ljava/lang/Class;Ljava/lang/String;S)V
+    29 Lcom/example/test/aaaaaaaaaaaaaaaaaaaaaaaaaaaaa$aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa;
+		direct_method_id:0x000000ab, code_off:0x0001f65c | <init>(Lcom/example/test/aaaaaaaaaaaaaaaaaaaaaaaaaaaaa;)V
+    30 Lcom/example/test/aaaaaaaaaaaaaaaaaaaaaaaaaaaaa;
+		direct_method_id:0x000000ac, code_off:0x0001f678 | <init>()V

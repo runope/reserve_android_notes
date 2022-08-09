@@ -1,0 +1,1325 @@
+     ____
+    / _  |   Frida 15.1.27 - A world-class dynamic instrumentation toolkit
+   | (_| |
+    > _  |   Commands:
+   /_/ |_|       help      -> Displays the help system
+   . . . .       object?   -> Display information about 'object'
+   . . . .       exit/quit -> Exit
+   . . . .
+   . . . .   More info at https://frida.re/docs/home/
+   . . . .
+   . . . .   Connected to Pixel 3 (id=881X00L9N)
+Spawning `com.example.cryptotest`...
+Spawned `com.example.cryptotest`. Resuming main thread!
+[Pixel 3::com.example.cryptotest ]-> loadso:/apex/com.android.os.statsd/lib/libstats_jni.so--addr:0x0--type:DT_INIT
+loadso:/data/app/~~yqfNRTFBNC4L6gA2oycp-g==/com.example.cryptotest-VtwyTKkuWOlQLYKSpK7Z5Q==/oat/arm/base.odex--addr:0x0--type:DT_INIT
+loadso:/data/app/~~yqfNRTFBNC4L6gA2oycp-g==/com.example.cryptotest-VtwyTKkuWOlQLYKSpK7Z5Q==/lib/arm/libSecShell.so--addr:0xcfaf9648--type:DT_INIT
+base_secShell : 0xcfa39000
+==========================================
+svc_mprotect: start = 0xcfa39000 , len = 0xa1000 , ATTRIBUTES = 0x7
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+cfa611b4  9b 66 a6 75 82 ab ba fb 1a 80 e6 75 d7 0e 7f 1b  .f.u.......u....
+cfa611c4  90 26 76 f4 26 27 f4 77 f3 27 66 04 7f 5f a0 77  .&v.&'.w.'f.._.w
+cfa611d4  e7 77 82 de 12 86 20 76 86 21 aa a8 22 85 02 0a  .w.... v.!.."...
+cfa611e4  3a b4 39 06 23 0d 13 16 06 26 9a d5 27 1a 02 25  :.9.#....&..'..%
+cfa611f4  d3 16 c8 41 28 92 4c df 15 92 51 34 06 b4 1e e3  ...A(.L...Q4....
+cfa61204  d0 2a d6 36 2b 16 9a dd 2f 69 2c a6 f2 0b 26 c2  .*.6+.../i,...&.
+cfa61214  b4 2d 16 f8 d0 31 d3 3e d0 5a 35 9e 32 d3 16 d5  .-...1.>.Z5.2...
+cfa61224  47 3a 36 5a 33 16 aa 60 b2 6a ce 36 5a c7 6a c6  G:6Z3..`.j.6Z.j.
+cfa61234  34 16 37 d3 d8 42 3e 7b 0f 38 16 4d da 3f 69 96  4.7..B>{.8.M.?i.
+cfa61244  ad a0 3d ad 3e 40 ce 41 8e 30 e7 e0 43 a2 86 44  ..=.>@.A.0..C..D
+cfa61254  a0 e6 4e a1 26 55 54 92 e0 26 93 6d 45 5e d6 30  ..N.&UT..&.mE^.0
+cfa61264  55 da 46 69 16 f3 a3 48 ad 3e 49 16 d5 35 4a a0  U.Fi...H.>I..5J.
+cfa61274  6e 4b a0 f6 4c ac 4e 4d b7 21 75 9a 50 a6 16 d3  nK..L.NM.!u.P...
+cfa61284  85 52 cd 32 16 f5 34 54 7b f2 16 4d d2 56 6b 9e  .R.2..4T{..M.Vk.
+cfa61294  57 87 0d 5a ac 5e 58 77 30 5e 56 06 5b 16 9a f6  W..Z.^Xw0^V.[...
+cfa612a4  5f 8c 06 30 0f da 60 ce 5d d3 16 ae 5a 61 2e 62  _..0..`.]...Za.b
+svc_mprotect leave
+==========================================
+==========================================
+svc_mprotect: start = 0xcfada000 , len = 0x1f000 , ATTRIBUTES = 0x3
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+cfa611b4  2d e9 f0 4f ad f6 ac 4d df f8 44 4e df f8 44 3e  -..O...M..DN..D>
+cfa611c4  7c 44 0a 90 e1 58 0b 68 0e 91 df f8 3c 1e cd f8  |D...X.h....<...
+cfa611d4  a4 3c 00 23 19 93 79 44 1a 93 41 f6 2f 53 03 93  .<.#..yD..A./S..
+cfa611e4  df f8 28 3e 19 9a 7b 44 04 93 df f8 24 3e 7b 44  ..(>..{D....$>{D
+cfa611f4  07 93 df f8 20 3e 7b 44 16 93 01 f2 14 43 17 93  .... >{D.....C..
+cfa61204  1a 9b 01 2b 00 f0 fb 86 00 2b fa d1 01 21 04 9b  ...+.....+...!..
+cfa61214  bf f3 5f 8f 03 f5 80 62 52 e8 00 3f 00 2b 03 d1  .._....bR..?.+..
+cfa61224  42 e8 00 10 00 28 f7 d1 01 2b bf f3 5f 8f ee d0  B....(...+.._...
+cfa61234  02 2b 1f d0 07 9b 04 9a 93 f8 08 33 83 f0 13 03  .+.........3....
+cfa61244  82 f8 04 34 07 9b 93 f8 0a 33 83 f0 3b 03 82 f8  ...4.....3..;...
+cfa61254  06 34 07 9b 93 f8 09 33 83 f0 04 03 82 f8 05 34  .4.....3.......4
+cfa61264  07 9b 93 f8 0b 33 83 f0 1b 03 82 f8 07 34 02 23  .....3.......4.#
+cfa61274  c2 f8 00 34 df f8 a0 3d 5f ad 12 26 13 27 e3 58  ...4...=_..&.'.X
+cfa61284  02 93 18 46 16 9b 03 f2 04 41 e8 f7 c2 e8 28 46  ...F.....A....(F
+cfa61294  00 21 0e 22 e8 f7 86 e8 28 46 23 21 19 22 69 71  .!."....(F#!."iq
+cfa612a4  82 23 ea 70 15 22 29 72 18 21 aa 71 69 72 0b 21  .#.p.")r.!.qir.!
+svc_mprotect leave
+==========================================
+==========================================
+svc_mprotect: start = 0xcfa39000 , len = 0xa1000 , ATTRIBUTES = 0x7
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+cfa611b4  2d e9 f0 4f ad f6 ac 4d df f8 44 4e df f8 44 3e  -..O...M..DN..D>
+cfa611c4  7c 44 0a 90 e1 58 0b 68 0e 91 df f8 3c 1e cd f8  |D...X.h....<...
+cfa611d4  a4 3c 00 23 19 93 79 44 1a 93 41 f6 2f 53 03 93  .<.#..yD..A./S..
+cfa611e4  df f8 28 3e 19 9a 7b 44 04 93 df f8 24 3e 7b 44  ..(>..{D....$>{D
+cfa611f4  07 93 df f8 20 3e 7b 44 16 93 01 f2 14 43 17 93  .... >{D.....C..
+cfa61204  1a 9b 01 2b 00 f0 fb 86 00 2b fa d1 01 21 04 9b  ...+.....+...!..
+cfa61214  bf f3 5f 8f 03 f5 80 62 52 e8 00 3f 00 2b 03 d1  .._....bR..?.+..
+cfa61224  42 e8 00 10 00 28 f7 d1 01 2b bf f3 5f 8f ee d0  B....(...+.._...
+cfa61234  02 2b 1f d0 07 9b 04 9a 93 f8 08 33 83 f0 13 03  .+.........3....
+cfa61244  82 f8 04 34 07 9b 93 f8 0a 33 83 f0 3b 03 82 f8  ...4.....3..;...
+cfa61254  06 34 07 9b 93 f8 09 33 83 f0 04 03 82 f8 05 34  .4.....3.......4
+cfa61264  07 9b 93 f8 0b 33 83 f0 1b 03 82 f8 07 34 02 23  .....3.......4.#
+cfa61274  c2 f8 00 34 df f8 a0 3d 5f ad 12 26 13 27 e3 58  ...4...=_..&.'.X
+cfa61284  02 93 18 46 16 9b 03 f2 04 41 e8 f7 c2 e8 28 46  ...F.....A....(F
+cfa61294  00 21 0e 22 e8 f7 86 e8 28 46 23 21 19 22 69 71  .!."....(F#!."iq
+cfa612a4  82 23 ea 70 15 22 29 72 18 21 aa 71 69 72 0b 21  .#.p.")r.!.qir.!
+svc_mprotect leave
+==========================================
+loadso:/data/app/~~yqfNRTFBNC4L6gA2oycp-g==/com.example.cryptotest-VtwyTKkuWOlQLYKSpK7Z5Q==/lib/arm/libSecShell.so--addr:0xcfa4a721--type:function
+base_secShell : 0xcfa39000
+=======decode_str========= size = 0x18 op = 0xd6  return addr = 0x14397
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff8fa00  72 6f 2e 62 75 69 6c 64 2e 76 65 72 73 69 6f 6e  ro.build.version
+fff8fa10  2e 72 65 6c 65 61 73 65                          .release
+=======decode_str========= size = 0x19 op = 0xe5  return addr = 0x14441
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff8fa1c  72 6f 2e 62 75 69 6c 64 2e 76 65 72 73 69 6f 6e  ro.build.version
+fff8fa2c  2e 63 6f 64 65 6e 61 6d 65                       .codename
+=======decode_str========= size = 0x14 op = 0xce  return addr = 0x14539
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff8f9e8  72 6f 2e 62 75 69 6c 64 2e 76 65 72 73 69 6f 6e  ro.build.version
+fff8f9f8  2e 73 64 6b                                      .sdk
+=======decode_str========= size = 0x6 op = 0xe7  return addr = 0x12d87
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff8f9c0  6c 69 62 61 72 74                                libart
+=======decode_str========= size = 0x10 op = 0xe9  return addr = 0x117bf
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff8fae8  2f 70 72 6f 63 2f 25 64 2f 63 6d 64 6c 69 6e 65  /proc/%d/cmdline
+=======decode_str========= size = 0x7 op = 0xab  return addr = 0x13eb7
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff8f9dc  6c 69 62 63 2e 73 6f                             libc.so
+=======decode_str========= size = 0x8 op = 0x86  return addr = 0x13f0b
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff8f9f4  6d 70 72 6f 74 65 63 74                          mprotect
+=======decode_str========= size = 0x4 op = 0xdb  return addr = 0x13f47
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff8f98c  6d 6d 61 70                                      mmap
+=======decode_str========= size = 0x6 op = 0xc7  return addr = 0x13f93
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff8f9ac  6d 75 6e 6d 61 70                                munmap
+=======decode_str========= size = 0x11 op = 0xc8  return addr = 0x14019
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff8fa14  72 6f 2e 62 6f 61 72 64 2e 70 6c 61 74 66 6f 72  ro.board.platfor
+fff8fa24  6d                                               m
+=======decode_str========= size = 0x6 op = 0xa6  return addr = 0x1405f
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff8f9b8  72 6b 33 33 39 39                                rk3399
+=======decode_str========= size = 0x5 op = 0xc0  return addr = 0x140b3
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff8f994  66 6f 70 65 6e                                   fopen
+=======decode_str========= size = 0x6 op = 0xe8  return addr = 0x140ff
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff8f9c4  66 63 6c 6f 73 65                                fclose
+=======decode_str========= size = 0x5 op = 0xd8  return addr = 0x1413d
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff8f99c  66 67 65 74 73                                   fgets
+=======decode_str========= size = 0x6 op = 0xf7  return addr = 0x14187
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff8f9d0  66 77 72 69 74 65                                fwrite
+=======decode_str========= size = 0x5 op = 0xdd  return addr = 0x141c9
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff8f9a4  66 72 65 61 64                                   fread
+=======decode_str========= size = 0x7 op = 0x9a  return addr = 0x14217
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff8f9e8  73 70 72 69 6e 74 66                             sprintf
+=======decode_str========= size = 0xe op = 0xb2  return addr = 0x1428b
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff8fa00  70 74 68 72 65 61 64 5f 63 72 65 61 74 65        pthread_create
+=======decode_str========= size = 0x1 op = 0x94  return addr = 0x11829
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff8fadc  72                                               r
+=======decode_str========= size = 0x2 op = 0xf1  return addr = 0x1189d
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff8fae0  25 73                                            %s
+=======decode_str========= size = 0x13 op = 0xe4  return addr = 0x11925
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff8fb14  2f 73 79 73 74 65 6d 2f 62 69 6e 2f 64 65 78 32  /system/bin/dex2
+fff8fb24  6f 61 74                                         oat
+loadso:/data/app/~~yqfNRTFBNC4L6gA2oycp-g==/com.example.cryptotest-VtwyTKkuWOlQLYKSpK7Z5Q==/lib/arm/libSecShell.so--addr:0xcfa4aa5d--type:function
+base_secShell : 0xcfa39000
+loadso:/data/app/~~yqfNRTFBNC4L6gA2oycp-g==/com.example.cryptotest-VtwyTKkuWOlQLYKSpK7Z5Q==/lib/arm/libSecShell.so--addr:0x0--type:function
+base_secShell : 0xcfa39000
+=======decode_str========= size = 0xb op = 0xf2  return addr = 0x282cb
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff905dc  6c 69 62 53 65 63 53 68 65 6c 6c                 libSecShell
+=======decode_str========= size = 0x17 op = 0x91  return addr = 0x2938d
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff906a8  63 6f 6d 2f 53 65 63 53 68 65 6c 6c 2f 53 65 63  com/SecShell/Sec
+fff906b8  53 68 65 6c 6c 2f 48                             Shell/H
+=======decode_str========= size = 0x7 op = 0xab  return addr = 0x13eb7
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff9037c  6c 69 62 63 2e 73 6f                             libc.so
+=======decode_str========= size = 0x8 op = 0x86  return addr = 0x13f0b
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff90394  6d 70 72 6f 74 65 63 74                          mprotect
+=======decode_str========= size = 0x4 op = 0xdb  return addr = 0x13f47
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff9032c  6d 6d 61 70                                      mmap
+=======decode_str========= size = 0x6 op = 0xc7  return addr = 0x13f93
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff9034c  6d 75 6e 6d 61 70                                munmap
+=======decode_str========= size = 0x11 op = 0xc8  return addr = 0x14019
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff903b4  72 6f 2e 62 6f 61 72 64 2e 70 6c 61 74 66 6f 72  ro.board.platfor
+fff903c4  6d                                               m
+=======decode_str========= size = 0x6 op = 0xa6  return addr = 0x1405f
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff90358  72 6b 33 33 39 39                                rk3399
+=======decode_str========= size = 0x5 op = 0xc0  return addr = 0x140b3
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff90334  66 6f 70 65 6e                                   fopen
+=======decode_str========= size = 0x6 op = 0xe8  return addr = 0x140ff
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff90364  66 63 6c 6f 73 65                                fclose
+=======decode_str========= size = 0x5 op = 0xd8  return addr = 0x1413d
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff9033c  66 67 65 74 73                                   fgets
+=======decode_str========= size = 0x6 op = 0xf7  return addr = 0x14187
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff90370  66 77 72 69 74 65                                fwrite
+=======decode_str========= size = 0x5 op = 0xdd  return addr = 0x141c9
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff90344  66 72 65 61 64                                   fread
+=======decode_str========= size = 0x7 op = 0x9a  return addr = 0x14217
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff90388  73 70 72 69 6e 74 66                             sprintf
+=======decode_str========= size = 0xe op = 0xb2  return addr = 0x1428b
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff903a0  70 74 68 72 65 61 64 5f 63 72 65 61 74 65        pthread_create
+=======decode_str========= size = 0x7 op = 0xa2  return addr = 0x29e73
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff90904  50 4b 47 4e 41 4d 45                             PKGNAME
+=======decode_str========= size = 0x12 op = 0xb6  return addr = 0x29ecd
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff90d04  4c 6a 61 76 61 2f 6c 61 6e 67 2f 53 74 72 69 6e  Ljava/lang/Strin
+fff90d14  67 3b                                            g;
+=======decode_str========= size = 0x1a op = 0xe6  return addr = 0x283e3
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff906e0  61 6e 64 72 6f 69 64 2f 61 70 70 2f 41 63 74 69  android/app/Acti
+fff906f0  76 69 74 79 54 68 72 65 61 64                    vityThread
+=======decode_str========= size = 0x15 op = 0xe3  return addr = 0x2845d
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff90690  63 75 72 72 65 6e 74 41 63 74 69 76 69 74 79 54  currentActivityT
+fff906a0  68 72 65 61 64                                   hread
+=======decode_str========= size = 0x1e op = 0xa7  return addr = 0x284e5
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff90720  28 29 4c 61 6e 64 72 6f 69 64 2f 61 70 70 2f 41  ()Landroid/app/A
+fff90730  63 74 69 76 69 74 79 54 68 72 65 61 64 3b        ctivityThread;
+=======decode_str========= size = 0x10 op = 0xc6  return addr = 0x2855f
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff90638  67 65 74 53 79 73 74 65 6d 43 6f 6e 74 65 78 74  getSystemContext
+=======decode_str========= size = 0x1b op = 0xbe  return addr = 0x28613
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff90700  28 29 4c 61 6e 64 72 6f 69 64 2f 61 70 70 2f 43  ()Landroid/app/C
+fff90710  6f 6e 74 65 78 74 49 6d 70 6c 3b                 ontextImpl;
+=======decode_str========= size = 0x17 op = 0xbc  return addr = 0x28699
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff906c4  61 6e 64 72 6f 69 64 2f 61 70 70 2f 43 6f 6e 74  android/app/Cont
+fff906d4  65 78 74 49 6d 70 6c                             extImpl
+=======decode_str========= size = 0x11 op = 0x87  return addr = 0x2871f
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff9064c  67 65 74 50 61 63 6b 61 67 65 4d 61 6e 61 67 65  getPackageManage
+fff9065c  72                                               r
+=======decode_str========= size = 0x25 op = 0x9b  return addr = 0x287cd
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff90784  28 29 4c 61 6e 64 72 6f 69 64 2f 63 6f 6e 74 65  ()Landroid/conte
+fff90794  6e 74 2f 70 6d 2f 50 61 63 6b 61 67 65 4d 61 6e  nt/pm/PackageMan
+fff907a4  61 67 65 72 3b                                   ager;
+=======decode_str========= size = 0xe op = 0xb3  return addr = 0x28867
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff905fc  67 65 74 50 61 63 6b 61 67 65 49 6e 66 6f        getPackageInfo
+=======decode_str========= size = 0x35 op = 0xc8  return addr = 0x28997
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff90804  28 4c 6a 61 76 61 2f 6c 61 6e 67 2f 53 74 72 69  (Ljava/lang/Stri
+fff90814  6e 67 3b 49 29 4c 61 6e 64 72 6f 69 64 2f 63 6f  ng;I)Landroid/co
+fff90824  6e 74 65 6e 74 2f 70 6d 2f 50 61 63 6b 61 67 65  ntent/pm/Package
+fff90834  49 6e 66 6f 3b                                   Info;
+=======decode_str========= size = 0xf op = 0xd9  return addr = 0x28a37
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff90624  61 70 70 6c 69 63 61 74 69 6f 6e 49 6e 66 6f     applicationInfo
+=======decode_str========= size = 0x24 op = 0xca  return addr = 0x28ae5
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff90744  4c 61 6e 64 72 6f 69 64 2f 63 6f 6e 74 65 6e 74  Landroid/content
+fff90754  2f 70 6d 2f 41 70 70 6c 69 63 61 74 69 6f 6e 49  /pm/ApplicationI
+fff90764  6e 66 6f 3b                                      nfo;
+=======decode_str========= size = 0x9 op = 0xba  return addr = 0x28b67
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff905d0  73 6f 75 72 63 65 44 69 72                       sourceDir
+=======decode_str========= size = 0x12 op = 0xad  return addr = 0x28beb
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff90660  4c 6a 61 76 61 2f 6c 61 6e 67 2f 53 74 72 69 6e  Ljava/lang/Strin
+fff90670  67 3b                                            g;
+=======decode_str========= size = 0x7 op = 0xa8  return addr = 0x28c59
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff905ac  64 61 74 61 44 69 72                             dataDir
+=======decode_str========= size = 0x12 op = 0xac  return addr = 0x28cdb
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff90678  4c 6a 61 76 61 2f 6c 61 6e 67 2f 53 74 72 69 6e  Ljava/lang/Strin
+fff90688  67 3b                                            g;
+=======decode_str========= size = 0x8 op = 0xb8  return addr = 0x28d81
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff905b8  2f 73 64 63 61 72 64 2f                          /sdcard/
+=======decode_str========= size = 0x18 op = 0xd6  return addr = 0x14397
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff903a0  72 6f 2e 62 75 69 6c 64 2e 76 65 72 73 69 6f 6e  ro.build.version
+fff903b0  2e 72 65 6c 65 61 73 65                          .release
+=======decode_str========= size = 0x19 op = 0xe5  return addr = 0x14441
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff903bc  72 6f 2e 62 75 69 6c 64 2e 76 65 72 73 69 6f 6e  ro.build.version
+fff903cc  2e 63 6f 64 65 6e 61 6d 65                       .codename
+=======decode_str========= size = 0x14 op = 0xce  return addr = 0x14539
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff90388  72 6f 2e 62 75 69 6c 64 2e 76 65 72 73 69 6f 6e  ro.build.version
+fff90398  2e 73 64 6b                                      .sdk
+=======decode_str========= size = 0x10 op = 0x83  return addr = 0x28df9
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff90904  6e 61 74 69 76 65 4c 69 62 72 61 72 79 44 69 72  nativeLibraryDir
+=======decode_str========= size = 0x12 op = 0x88  return addr = 0x28e73
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff90d04  4c 6a 61 76 61 2f 6c 61 6e 67 2f 53 74 72 69 6e  Ljava/lang/Strin
+fff90d14  67 3b                                            g;
+=======decode_str========= size = 0xb op = 0xd0  return addr = 0x28f0f
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff905ec  2f 70 72 6f 63 2f 25 64 2f 66 64                 /proc/%d/fd
+=======decode_str========= size = 0xe op = 0xcd  return addr = 0x28f83
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff90610  2f 70 72 6f 63 2f 25 64 2f 66 64 2f 25 64        /proc/%d/fd/%d
+=======decode_str========= size = 0x4 op = 0xca  return addr = 0x28fb7
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff905a4  2e 61 70 6b                                      .apk
+=======decode_str========= size = 0x8 op = 0xcf  return addr = 0x29319
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff905c4  62 61 73 65 2e 61 70 6b                          base.apk
+=======decode_str========= size = 0xb op = 0xce  return addr = 0x290e3
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff90904  23 23 23 4d 50 41 41 53 23 23 23                 ###MPAAS###
+=======decode_str========= size = 0x7 op = 0xcd  return addr = 0x29129
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff90884  49 53 4d 50 41 41 53                             ISMPAAS
+=======decode_str========= size = 0x12 op = 0xe6  return addr = 0x29183
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff90d04  4c 6a 61 76 61 2f 6c 61 6e 67 2f 53 74 72 69 6e  Ljava/lang/Strin
+fff90d14  67 3b                                            g;
+=======decode_str========= size = 0x18 op = 0xd6  return addr = 0x14397
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff90108  72 6f 2e 62 75 69 6c 64 2e 76 65 72 73 69 6f 6e  ro.build.version
+fff90118  2e 72 65 6c 65 61 73 65                          .release
+=======decode_str========= size = 0x19 op = 0xe5  return addr = 0x14441
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff90124  72 6f 2e 62 75 69 6c 64 2e 76 65 72 73 69 6f 6e  ro.build.version
+fff90134  2e 63 6f 64 65 6e 61 6d 65                       .codename
+=======decode_str========= size = 0x14 op = 0xce  return addr = 0x14539
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff900f0  72 6f 2e 62 75 69 6c 64 2e 76 65 72 73 69 6f 6e  ro.build.version
+fff90100  2e 73 64 6b                                      .sdk
+=======decode_str========= size = 0x15 op = 0xe5  return addr = 0x15269
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff90204  2f 73 79 73 74 65 6d 2f 6c 69 62 2f 6c 69 62 64  /system/lib/libd
+fff90214  76 6d 2e 73 6f                                   vm.so
+=======decode_str========= size = 0x15 op = 0xeb  return addr = 0x152f5
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff9021c  2f 73 79 73 74 65 6d 2f 6c 69 62 2f 6c 69 62 61  /system/lib/liba
+fff9022c  72 74 2e 73 6f                                   rt.so
+=======decode_str========= size = 0x6 op = 0xec  return addr = 0x15341
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff901f8  6c 69 62 64 76 6d                                libdvm
+=======decode_str========= size = 0x19 op = 0xeb  return addr = 0x153b1
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff90234  70 65 72 73 69 73 74 2e 73 79 73 2e 64 61 6c 76  persist.sys.dalv
+fff90244  69 6b 2e 76 6d 2e 6c 69 62                       ik.vm.lib
+=======decode_str========= size = 0x18 op = 0xd6  return addr = 0x14397
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff90108  72 6f 2e 62 75 69 6c 64 2e 76 65 72 73 69 6f 6e  ro.build.version
+fff90118  2e 72 65 6c 65 61 73 65                          .release
+=======decode_str========= size = 0x19 op = 0xe5  return addr = 0x14441
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff90124  72 6f 2e 62 75 69 6c 64 2e 76 65 72 73 69 6f 6e  ro.build.version
+fff90134  2e 63 6f 64 65 6e 61 6d 65                       .codename
+=======decode_str========= size = 0x14 op = 0xce  return addr = 0x14539
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff900f0  72 6f 2e 62 75 69 6c 64 2e 76 65 72 73 69 6f 6e  ro.build.version
+fff90100  2e 73 64 6b                                      .sdk
+=======decode_str========= size = 0x6 op = 0xe7  return addr = 0x12d87
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff900c8  6c 69 62 61 72 74                                libart
+=======decode_str========= size = 0x2 op = 0xcd  return addr = 0x147b3
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff900d8  25 73                                            %s
+=======decode_str========= size = 0x5 op = 0xa5  return addr = 0x147e1
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff900e8  25 73 2f 25 73                                   %s/%s
+=======decode_str========= size = 0x6 op = 0xae  return addr = 0x1481d
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff900f0  2e 63 61 63 68 65                                .cache
+=======decode_str========= size = 0x3 op = 0xb7  return addr = 0x1485f
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff900e0  6f 61 74                                         oat
+=======decode_str========= size = 0x8 op = 0xed  return addr = 0x148c7
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff9012c  2e 70 61 79 6c 6f 61 64                          .payload
+=======decode_str========= size = 0xc op = 0xd0  return addr = 0x14967
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff90148  76 31 66 69 6c 74 65 72 2e 6a 61 72              v1filter.jar
+=======decode_str========= size = 0xb op = 0xde  return addr = 0x14b25
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff90138  63 6c 61 73 73 65 73 2e 6a 61 72                 classes.jar
+=======decode_str========= size = 0xc op = 0xbe  return addr = 0x14bc3
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff90158  63 6c 61 73 73 65 73 2e 6f 64 65 78              classes.odex
+=======decode_str========= size = 0xc op = 0xaa  return addr = 0x14c3b
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff90168  63 6c 61 73 73 65 73 2e 76 64 65 78              classes.vdex
+=======decode_str========= size = 0x6 op = 0xd0  return addr = 0x14cc7
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff900fc  25 73 25 64 25 73                                %s%d%s
+=======decode_str========= size = 0x9 op = 0xe1  return addr = 0x15041
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff90158  25 73 2f 25 73 25 64 25 73                       %s/%s%d%s
+=======decode_str========= size = 0x5 op = 0xbf  return addr = 0x1546d
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff90204  25 73 2f 25 73                                   %s/%s
+=======decode_str========= size = 0x6 op = 0xab  return addr = 0x15499
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff9021c  61 73 73 65 74 73                                assets
+=======decode_str========= size = 0x12 op = 0x88  return addr = 0x15933
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff8ffdc  2f 70 72 6f 63 2f 73 65 6c 66 2f 63 6d 64 6c 69  /proc/self/cmdli
+fff8ffec  6e 65                                            ne
+=======decode_str========= size = 0x1 op = 0x87  return addr = 0x15953
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff8ffd0  72                                               r
+=======decode_str========= size = 0x2 op = 0xbf  return addr = 0x1598d
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff8ffd4  25 73                                            %s
+=======decode_str========= size = 0x4 op = 0x96  return addr = 0x15a15
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff90018  3a 62 62 73                                      :bbs
+=======decode_str========= size = 0x1e op = 0xf4  return addr = 0x15a8f
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff90020  3a 62 62 73 3a 63 6f 6d 2e 53 65 63 53 68 65 6c  :bbs:com.SecShel
+fff90030  6c 2e 53 65 63 53 68 65 6c 6c 2e 72 2e 53        l.SecShell.r.S
+=======decode_str========= size = 0x12 op = 0x88  return addr = 0x15933
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff8ffec  2f 70 72 6f 63 2f 73 65 6c 66 2f 63 6d 64 6c 69  /proc/self/cmdli
+fff8fffc  6e 65                                            ne
+=======decode_str========= size = 0x1 op = 0x87  return addr = 0x15953
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff8ffe0  72                                               r
+=======decode_str========= size = 0x2 op = 0xbf  return addr = 0x1598d
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff8ffe4  25 73                                            %s
+=======decode_str========= size = 0x19 op = 0xca  return addr = 0x15b7b
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff90028  63 6f 6d 2e 6d 69 75 69 2e 70 61 63 6b 61 67 65  com.miui.package
+fff90038  69 6e 73 74 61 6c 6c 65 72                       installer
+=======decode_str========= size = 0xf op = 0xa1  return addr = 0x29d55
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff90904  2f 70 72 6f 63 2f 73 65 6c 66 2f 6d 61 70 73     /proc/self/maps
+=======decode_str========= size = 0x7 op = 0xbf  return addr = 0x2a4e1
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff90884  25 6c 78 2d 25 6c 78                             %lx-%lx
+=======decode_str========= size = 0xb op = 0xf4  return addr = 0x2955b
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff90700  63 6c 61 73 73 65 73 2e 64 76 65                 classes.dve
+=======decode_str========= size = 0x6 op = 0xac  return addr = 0x160a1
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff9020c  61 74 74 61 63 68                                attach
+=======decode_str========= size = 0x35 op = 0x98  return addr = 0x1618f
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff90324  28 4c 61 6e 64 72 6f 69 64 2f 61 70 70 2f 41 70  (Landroid/app/Ap
+fff90334  70 6c 69 63 61 74 69 6f 6e 3b 4c 61 6e 64 72 6f  plication;Landro
+fff90344  69 64 2f 63 6f 6e 74 65 6e 74 2f 43 6f 6e 74 65  id/content/Conte
+fff90354  78 74 3b 29 56                                   xt;)V
+=======decode_str========= size = 0x1 op = 0xf7  return addr = 0x161bd
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff901a0  62                                               b
+=======decode_str========= size = 0x35 op = 0x9a  return addr = 0x16311
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff9035c  28 4c 61 6e 64 72 6f 69 64 2f 63 6f 6e 74 65 6e  (Landroid/conten
+fff9036c  74 2f 43 6f 6e 74 65 78 74 3b 4c 61 6e 64 72 6f  t/Context;Landro
+fff9037c  69 64 2f 61 70 70 2f 41 70 70 6c 69 63 61 74 69  id/app/Applicati
+fff9038c  6f 6e 3b 29 56                                   on;)V
+=======decode_str========= size = 0x1 op = 0xa3  return addr = 0x16341
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff901a4  63                                               c
+=======decode_str========= size = 0x3 op = 0xd8  return addr = 0x16369
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff901ec  28 29 56                                         ()V
+=======decode_str========= size = 0x1 op = 0xce  return addr = 0x16395
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff901a8  64                                               d
+=======decode_str========= size = 0x26 op = 0x9c  return addr = 0x1647f
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff902f8  28 4c 6a 61 76 61 2f 6c 61 6e 67 2f 53 74 72 69  (Ljava/lang/Stri
+fff90308  6e 67 3b 29 4c 6a 61 76 61 2f 6c 61 6e 67 2f 53  ng;)Ljava/lang/S
+fff90318  74 72 69 6e 67 3b                                tring;
+=======decode_str========= size = 0x1 op = 0x94  return addr = 0x164af
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff901ac  65                                               e
+=======decode_str========= size = 0x49 op = 0xce  return addr = 0x1664f
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff90394  28 4c 6a 61 76 61 2f 6c 61 6e 67 2f 4f 62 6a 65  (Ljava/lang/Obje
+fff903a4  63 74 3b 4c 6a 61 76 61 2f 75 74 69 6c 2f 4c 69  ct;Ljava/util/Li
+fff903b4  73 74 3b 4c 6a 61 76 61 2f 6c 61 6e 67 2f 53 74  st;Ljava/lang/St
+fff903c4  72 69 6e 67 3b 29 5b 4c 6a 61 76 61 2f 6c 61 6e  ring;)[Ljava/lan
+fff903d4  67 2f 4f 62 6a 65 63 74 3b                       g/Object;
+=======decode_str========= size = 0x1 op = 0xd7  return addr = 0x1667f
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff901b0  66                                               f
+=======decode_str========= size = 0x15 op = 0xd6  return addr = 0x16715
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff90260  28 29 5b 4c 6a 61 76 61 2f 6c 61 6e 67 2f 53 74  ()[Ljava/lang/St
+fff90270  72 69 6e 67 3b                                   ring;
+=======decode_str========= size = 0x1 op = 0x86  return addr = 0x16745
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff901b4  67                                               g
+=======decode_str========= size = 0x15 op = 0x89  return addr = 0x167b7
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff90278  28 29 5b 4c 6a 61 76 61 2f 6c 61 6e 67 2f 53 74  ()[Ljava/lang/St
+fff90288  72 69 6e 67 3b                                   ring;
+=======decode_str========= size = 0x1 op = 0xf0  return addr = 0x167e5
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff901b8  68                                               h
+=======decode_str========= size = 0x15 op = 0xb4  return addr = 0x16861
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff90290  28 29 5b 4c 6a 61 76 61 2f 6c 61 6e 67 2f 53 74  ()[Ljava/lang/St
+fff902a0  72 69 6e 67 3b                                   ring;
+=======decode_str========= size = 0x1 op = 0xf4  return addr = 0x1688b
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff901bc  6e                                               n
+=======decode_str========= size = 0x15 op = 0xa5  return addr = 0x168f9
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff902a8  28 29 5b 4c 6a 61 76 61 2f 6c 61 6e 67 2f 53 74  ()[Ljava/lang/St
+fff902b8  72 69 6e 67 3b                                   ring;
+=======decode_str========= size = 0x1 op = 0xaf  return addr = 0x16927
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff901c0  6a                                               j
+=======decode_str========= size = 0x15 op = 0xc1  return addr = 0x16991
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff902c0  28 29 5b 4c 6a 61 76 61 2f 6c 61 6e 67 2f 53 74  ()[Ljava/lang/St
+fff902d0  72 69 6e 67 3b                                   ring;
+=======decode_str========= size = 0x1 op = 0xf9  return addr = 0x169c1
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff901c4  6b                                               k
+=======decode_str========= size = 0x14 op = 0xc5  return addr = 0x16a2f
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff90218  28 29 4c 6a 61 76 61 2f 6c 61 6e 67 2f 53 74 72  ()Ljava/lang/Str
+fff90228  69 6e 67 3b                                      ing;
+=======decode_str========= size = 0x1 op = 0x93  return addr = 0x16a5b
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff901c8  6c                                               l
+=======decode_str========= size = 0x14 op = 0xc0  return addr = 0x16ac3
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff90230  28 29 4c 6a 61 76 61 2f 6c 61 6e 67 2f 53 74 72  ()Ljava/lang/Str
+fff90240  69 6e 67 3b                                      ing;
+=======decode_str========= size = 0x1 op = 0xe9  return addr = 0x16aef
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff901cc  6d                                               m
+=======decode_str========= size = 0x14 op = 0x90  return addr = 0x16b59
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff90248  28 29 4c 6a 61 76 61 2f 6c 61 6e 67 2f 53 74 72  ()Ljava/lang/Str
+fff90258  69 6e 67 3b                                      ing;
+=======decode_str========= size = 0x2 op = 0xe0  return addr = 0x16b91
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff901dc  62 62                                            bb
+=======decode_str========= size = 0x4e op = 0x96  return addr = 0x16d65
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff903e0  28 4c 61 6e 64 72 6f 69 64 2f 63 6f 6e 74 65 6e  (Landroid/conten
+fff903f0  74 2f 43 6f 6e 74 65 78 74 3b 4c 61 6e 64 72 6f  t/Context;Landro
+fff90400  69 64 2f 61 70 70 2f 41 70 70 6c 69 63 61 74 69  id/app/Applicati
+fff90410  6f 6e 3b 4c 61 6e 64 72 6f 69 64 2f 61 70 70 2f  on;Landroid/app/
+fff90420  41 70 70 6c 69 63 61 74 69 6f 6e 3b 29 56        Application;)V
+=======decode_str========= size = 0x1 op = 0x93  return addr = 0x16d93
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff901d0  6f                                               o
+=======decode_str========= size = 0x1c op = 0xb1  return addr = 0x16e4b
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff902d8  28 4c 61 6e 64 72 6f 69 64 2f 63 6f 6e 74 65 6e  (Landroid/conten
+fff902e8  74 2f 43 6f 6e 74 65 78 74 3b 29 49              t/Context;)I
+=======decode_str========= size = 0x1 op = 0xad  return addr = 0x16e77
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff901d4  70                                               p
+=======decode_str========= size = 0x3 op = 0x9c  return addr = 0x16e9d
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff901f4  28 29 56                                         ()V
+=======decode_str========= size = 0x1 op = 0x99  return addr = 0x16ecb
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff901d8  71                                               q
+=======decode_str========= size = 0x3 op = 0xd5  return addr = 0x16ef3
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff901fc  28 29 49                                         ()I
+=======decode_str========= size = 0x2 op = 0xa0  return addr = 0x16f2b
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff901e4  6d 75                                            mu
+=======decode_str========= size = 0x3 op = 0xf8  return addr = 0x16f53
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff90204  28 29 49                                         ()I
+=======decode_str3========= size = 0x10 op = 0xef  return addr = 0x4d8d9
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff8fee4  72 6f 2e 70 72 6f 64 75 63 74 2e 6d 6f 64 65 6c  ro.product.model
+=======decode_str3========= size = 0x17 op = 0xed  return addr = 0x4db17
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff8fef8  72 6f 2e 70 72 6f 64 75 63 74 2e 6d 61 6e 75 66  ro.product.manuf
+fff8ff08  61 63 74 75 72 65 72                             acturer
+=======decode_str3========= size = 0x4 op = 0x9c  return addr = 0x4da55
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff8fedc  53 50 52 44                                      SPRD
+=======decode_str3========= size = 0x13 op = 0x8f  return addr = 0x4bb9b
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff8f9fc  2f 73 79 73 74 65 6d 2f 6c 69 62 2f 6c 69 62 63  /system/lib/libc
+fff8fa0c  2e 73 6f                                         .so
+=======decode_str3========= size = 0xf op = 0xf4  return addr = 0x4bded
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff8f9e8  2f 70 72 6f 63 2f 73 65 6c 66 2f 6d 61 70 73     /proc/self/maps
+=======decode_str========= size = 0xf op = 0xbe  return addr = 0x1e127
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff8f8ac  6a 61 76 61 2f 6c 61 6e 67 2f 43 6c 61 73 73     java/lang/Class
+=======decode_str========= size = 0xe op = 0x9f  return addr = 0x1e199
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff8f890  67 65 74 43 6c 61 73 73 4c 6f 61 64 65 72        getClassLoader
+=======decode_str========= size = 0x19 op = 0x9f  return addr = 0x1e205
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff8f8c8  28 29 4c 6a 61 76 61 2f 6c 61 6e 67 2f 43 6c 61  ()Ljava/lang/Cla
+fff8f8d8  73 73 4c 6f 61 64 65 72 3b                       ssLoader;
+=======decode_str========= size = 0x1 op = 0x89  return addr = 0x1e239
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff8f840  66                                               f
+=======decode_str========= size = 0x3e op = 0x95  return addr = 0x1e385
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff8f8ec  28 4c 6a 61 76 61 2f 6c 61 6e 67 2f 43 6c 61 73  (Ljava/lang/Clas
+fff8f8fc  73 4c 6f 61 64 65 72 3b 4c 6a 61 76 61 2f 6c 61  sLoader;Ljava/la
+fff8f90c  6e 67 2f 53 74 72 69 6e 67 3b 4c 6a 61 76 61 2f  ng/String;Ljava/
+fff8f91c  6c 61 6e 67 2f 53 74 72 69 6e 67 3b 29 56        lang/String;)V
+=======decode_str========= size = 0x19 op = 0xeb  return addr = 0x21fb9
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff8e03c  64 61 6c 76 69 6b 2f 73 79 73 74 65 6d 2f 44 65  dalvik/system/De
+fff8e04c  78 50 61 74 68 4c 69 73 74                       xPathList
+=======decode_str========= size = 0x17 op = 0xa1  return addr = 0x22031
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff8e020  6d 61 6b 65 49 6e 4d 65 6d 6f 72 79 44 65 78 45  makeInMemoryDexE
+fff8e030  6c 65 6d 65 6e 74 73                             lements
+=======decode_str========= size = 0x4c op = 0xaa  return addr = 0x221c3
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff8e094  28 5b 4c 6a 61 76 61 2f 6e 69 6f 2f 42 79 74 65  ([Ljava/nio/Byte
+fff8e0a4  42 75 66 66 65 72 3b 4c 6a 61 76 61 2f 75 74 69  Buffer;Ljava/uti
+fff8e0b4  6c 2f 4c 69 73 74 3b 29 5b 4c 64 61 6c 76 69 6b  l/List;)[Ldalvik
+fff8e0c4  2f 73 79 73 74 65 6d 2f 44 65 78 50 61 74 68 4c  /system/DexPathL
+fff8e0d4  69 73 74 24 45 6c 65 6d 65 6e 74 3b              ist$Element;
+=======decode_str========= size = 0x13 op = 0x9b  return addr = 0x2222b
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff8dfd8  6a 61 76 61 2f 6e 69 6f 2f 42 79 74 65 42 75 66  java/nio/ByteBuf
+fff8dfe8  66 65 72                                         fer
+=======decode_str========= size = 0x4 op = 0xbb  return addr = 0x22261
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff8df98  77 72 61 70                                      wrap
+=======decode_str========= size = 0x19 op = 0xdf  return addr = 0x22633
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff8e058  28 5b 42 29 4c 6a 61 76 61 2f 6e 69 6f 2f 42 79  ([B)Ljava/nio/By
+fff8e068  74 65 42 75 66 66 65 72 3b                       teBuffer;
+=======decode_str========= size = 0x13 op = 0xbb  return addr = 0x226cd
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff8dff0  6a 61 76 61 2f 75 74 69 6c 2f 41 72 72 61 79 4c  java/util/ArrayL
+fff8e000  69 73 74                                         ist
+=======decode_str========= size = 0x4 op = 0xc5  return addr = 0x22701
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff8dfa0  73 69 7a 65                                      size
+=======decode_str========= size = 0x3 op = 0xb6  return addr = 0x22777
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff8df90  28 29 49                                         ()I
+=======decode_str========= size = 0x2 op = 0x91  return addr = 0x1e3f1
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff8f874  66 66                                            ff
+=======decode_str========= size = 0x3e op = 0xd2  return addr = 0x1e559
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff8f930  28 4c 6a 61 76 61 2f 6c 61 6e 67 2f 43 6c 61 73  (Ljava/lang/Clas
+fff8f940  73 4c 6f 61 64 65 72 3b 4c 6a 61 76 61 2f 6c 61  sLoader;Ljava/la
+fff8f950  6e 67 2f 53 74 72 69 6e 67 3b 4c 6a 61 76 61 2f  ng/String;Ljava/
+fff8f960  6c 61 6e 67 2f 53 74 72 69 6e 67 3b 29 56        lang/String;)V
+=======decode_59880========= size = 0xf op = 0xd4  return addr = 0x59b6f
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff900c4  2f 70 72 6f 63 2f 73 65 6c 66 2f 74 61 73 6b     /proc/self/task
+=======decode_59880========= size = 0x19 op = 0xef  return addr = 0x59c6f
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff900d8  2f 70 72 6f 63 2f 73 65 6c 66 2f 74 61 73 6b 2f  /proc/self/task/
+fff900e8  25 73 2f 73 74 61 74 75 73                       %s/status
+=======decode_59880========= size = 0xb op = 0xec  return addr = 0x59cf3
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff900b4  67 75 6d 2d 6a 73 2d 6c 6f 6f 70                 gum-js-loop
+=======decode_59880========= size = 0x5 op = 0xc3  return addr = 0x59d35
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff900ac  67 6d 61 69 6e                                   gmain
+=======decode_59880========= size = 0x19 op = 0xef  return addr = 0x59c6f
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff900d8  2f 70 72 6f 63 2f 73 65 6c 66 2f 74 61 73 6b 2f  /proc/self/task/
+fff900e8  25 73 2f 73 74 61 74 75 73                       %s/status
+=======decode_59880========= size = 0xb op = 0xec  return addr = 0x59cf3
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff900b4  67 75 6d 2d 6a 73 2d 6c 6f 6f 70                 gum-js-loop
+=======decode_59880========= size = 0x5 op = 0xc3  return addr = 0x59d35
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff900ac  67 6d 61 69 6e                                   gmain
+=======decode_59880========= size = 0x19 op = 0xef  return addr = 0x59c6f
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff900d8  2f 70 72 6f 63 2f 73 65 6c 66 2f 74 61 73 6b 2f  /proc/self/task/
+fff900e8  25 73 2f 73 74 61 74 75 73                       %s/status
+=======decode_59880========= size = 0xb op = 0xec  return addr = 0x59cf3
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff900b4  67 75 6d 2d 6a 73 2d 6c 6f 6f 70                 gum-js-loop
+=======decode_59880========= size = 0x5 op = 0xc3  return addr = 0x59d35
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff900ac  67 6d 61 69 6e                                   gmain
+=======decode_59880========= size = 0x19 op = 0xef  return addr = 0x59c6f
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff900d8  2f 70 72 6f 63 2f 73 65 6c 66 2f 74 61 73 6b 2f  /proc/self/task/
+fff900e8  25 73 2f 73 74 61 74 75 73                       %s/status
+=======decode_59880========= size = 0xb op = 0xec  return addr = 0x59cf3
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff900b4  67 75 6d 2d 6a 73 2d 6c 6f 6f 70                 gum-js-loop
+=======decode_59880========= size = 0x5 op = 0xc3  return addr = 0x59d35
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff900ac  67 6d 61 69 6e                                   gmain
+=======decode_59880========= size = 0x19 op = 0xef  return addr = 0x59c6f
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff900d8  2f 70 72 6f 63 2f 73 65 6c 66 2f 74 61 73 6b 2f  /proc/self/task/
+fff900e8  25 73 2f 73 74 61 74 75 73                       %s/status
+=======decode_59880========= size = 0xb op = 0xec  return addr = 0x59cf3
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff900b4  67 75 6d 2d 6a 73 2d 6c 6f 6f 70                 gum-js-loop
+=======decode_59880========= size = 0x5 op = 0xc3  return addr = 0x59d35
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff900ac  67 6d 61 69 6e                                   gmain
+=======decode_59880========= size = 0x19 op = 0xef  return addr = 0x59c6f
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff900d8  2f 70 72 6f 63 2f 73 65 6c 66 2f 74 61 73 6b 2f  /proc/self/task/
+fff900e8  25 73 2f 73 74 61 74 75 73                       %s/status
+=======decode_59880========= size = 0xb op = 0xec  return addr = 0x59cf3
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff900b4  67 75 6d 2d 6a 73 2d 6c 6f 6f 70                 gum-js-loop
+=======decode_59880========= size = 0x5 op = 0xc3  return addr = 0x59d35
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff900ac  67 6d 61 69 6e                                   gmain
+=======decode_59880========= size = 0x19 op = 0xef  return addr = 0x59c6f
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff900d8  2f 70 72 6f 63 2f 73 65 6c 66 2f 74 61 73 6b 2f  /proc/self/task/
+fff900e8  25 73 2f 73 74 61 74 75 73                       %s/status
+=======decode_59880========= size = 0xb op = 0xec  return addr = 0x59cf3
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff900b4  67 75 6d 2d 6a 73 2d 6c 6f 6f 70                 gum-js-loop
+=======decode_59880========= size = 0x5 op = 0xc3  return addr = 0x59d35
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff900ac  67 6d 61 69 6e                                   gmain
+=======decode_59880========= size = 0x19 op = 0xef  return addr = 0x59c6f
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff900d8  2f 70 72 6f 63 2f 73 65 6c 66 2f 74 61 73 6b 2f  /proc/self/task/
+fff900e8  25 73 2f 73 74 61 74 75 73                       %s/status
+=======decode_59880========= size = 0xb op = 0xec  return addr = 0x59cf3
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff900b4  67 75 6d 2d 6a 73 2d 6c 6f 6f 70                 gum-js-loop
+=======decode_59880========= size = 0x5 op = 0xc3  return addr = 0x59d35
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff900ac  67 6d 61 69 6e                                   gmain
+=======decode_59880========= size = 0x19 op = 0xef  return addr = 0x59c6f
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff900d8  2f 70 72 6f 63 2f 73 65 6c 66 2f 74 61 73 6b 2f  /proc/self/task/
+fff900e8  25 73 2f 73 74 61 74 75 73                       %s/status
+=======decode_59880========= size = 0xb op = 0xec  return addr = 0x59cf3
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff900b4  67 75 6d 2d 6a 73 2d 6c 6f 6f 70                 gum-js-loop
+=======decode_59880========= size = 0x5 op = 0xc3  return addr = 0x59d35
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff900ac  67 6d 61 69 6e                                   gmain
+=======decode_59880========= size = 0x19 op = 0xef  return addr = 0x59c6f
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff900d8  2f 70 72 6f 63 2f 73 65 6c 66 2f 74 61 73 6b 2f  /proc/self/task/
+fff900e8  25 73 2f 73 74 61 74 75 73                       %s/status
+=======decode_59880========= size = 0xb op = 0xec  return addr = 0x59cf3
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff900b4  67 75 6d 2d 6a 73 2d 6c 6f 6f 70                 gum-js-loop
+=======decode_59880========= size = 0x5 op = 0xc3  return addr = 0x59d35
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff900ac  67 6d 61 69 6e                                   gmain
+=======decode_59880========= size = 0x19 op = 0xef  return addr = 0x59c6f
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff900d8  2f 70 72 6f 63 2f 73 65 6c 66 2f 74 61 73 6b 2f  /proc/self/task/
+fff900e8  25 73 2f 73 74 61 74 75 73                       %s/status
+=======decode_59880========= size = 0xb op = 0xec  return addr = 0x59cf3
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff900b4  67 75 6d 2d 6a 73 2d 6c 6f 6f 70                 gum-js-loop
+=======decode_59880========= size = 0x5 op = 0xc3  return addr = 0x59d35
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff900ac  67 6d 61 69 6e                                   gmain
+=======decode_59880========= size = 0x19 op = 0xef  return addr = 0x59c6f
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff900d8  2f 70 72 6f 63 2f 73 65 6c 66 2f 74 61 73 6b 2f  /proc/self/task/
+fff900e8  25 73 2f 73 74 61 74 75 73                       %s/status
+=======decode_59880========= size = 0xb op = 0xec  return addr = 0x59cf3
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff900b4  67 75 6d 2d 6a 73 2d 6c 6f 6f 70                 gum-js-loop
+=======decode_59880========= size = 0x5 op = 0xc3  return addr = 0x59d35
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff900ac  67 6d 61 69 6e                                   gmain
+=======decode_59880========= size = 0x19 op = 0xef  return addr = 0x59c6f
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff900d8  2f 70 72 6f 63 2f 73 65 6c 66 2f 74 61 73 6b 2f  /proc/self/task/
+fff900e8  25 73 2f 73 74 61 74 75 73                       %s/status
+=======decode_59880========= size = 0xb op = 0xec  return addr = 0x59cf3
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff900b4  67 75 6d 2d 6a 73 2d 6c 6f 6f 70                 gum-js-loop
+=======decode_59880========= size = 0x5 op = 0xc3  return addr = 0x59d35
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff900ac  67 6d 61 69 6e                                   gmain
+=======decode_59880========= size = 0x19 op = 0xef  return addr = 0x59c6f
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff900d8  2f 70 72 6f 63 2f 73 65 6c 66 2f 74 61 73 6b 2f  /proc/self/task/
+fff900e8  25 73 2f 73 74 61 74 75 73                       %s/status
+=======decode_59880========= size = 0xb op = 0xec  return addr = 0x59cf3
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff900b4  67 75 6d 2d 6a 73 2d 6c 6f 6f 70                 gum-js-loop
+=======decode_59880========= size = 0x5 op = 0xc3  return addr = 0x59d35
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff900ac  67 6d 61 69 6e                                   gmain
+=======decode_59880========= size = 0x19 op = 0xef  return addr = 0x59c6f
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff900d8  2f 70 72 6f 63 2f 73 65 6c 66 2f 74 61 73 6b 2f  /proc/self/task/
+fff900e8  25 73 2f 73 74 61 74 75 73                       %s/status
+=======decode_59880========= size = 0xb op = 0xec  return addr = 0x59cf3
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff900b4  67 75 6d 2d 6a 73 2d 6c 6f 6f 70                 gum-js-loop
+=======decode_59880========= size = 0x5 op = 0xc3  return addr = 0x59d35
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff900ac  67 6d 61 69 6e                                   gmain
+=======decode_59880========= size = 0x19 op = 0xef  return addr = 0x59c6f
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff900d8  2f 70 72 6f 63 2f 73 65 6c 66 2f 74 61 73 6b 2f  /proc/self/task/
+fff900e8  25 73 2f 73 74 61 74 75 73                       %s/status
+=======decode_59880========= size = 0xb op = 0xec  return addr = 0x59cf3
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff900b4  67 75 6d 2d 6a 73 2d 6c 6f 6f 70                 gum-js-loop
+=======decode_59880========= size = 0x5 op = 0xc3  return addr = 0x59d35
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff900ac  67 6d 61 69 6e                                   gmain
+=======decode_59880========= size = 0x19 op = 0xef  return addr = 0x59c6f
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff900d8  2f 70 72 6f 63 2f 73 65 6c 66 2f 74 61 73 6b 2f  /proc/self/task/
+fff900e8  25 73 2f 73 74 61 74 75 73                       %s/status
+=======decode_59880========= size = 0xb op = 0xec  return addr = 0x59cf3
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff900b4  67 75 6d 2d 6a 73 2d 6c 6f 6f 70                 gum-js-loop
+=======decode_59880========= size = 0x5 op = 0xc3  return addr = 0x59d35
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff900ac  67 6d 61 69 6e                                   gmain
+=======decode_59880========= size = 0x19 op = 0xef  return addr = 0x59c6f
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff900d8  2f 70 72 6f 63 2f 73 65 6c 66 2f 74 61 73 6b 2f  /proc/self/task/
+fff900e8  25 73 2f 73 74 61 74 75 73                       %s/status
+=======decode_59880========= size = 0xb op = 0xec  return addr = 0x59cf3
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff900b4  67 75 6d 2d 6a 73 2d 6c 6f 6f 70                 gum-js-loop
+=======decode_59880========= size = 0x5 op = 0xc3  return addr = 0x59d35
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff900ac  67 6d 61 69 6e                                   gmain
+=======decode_59880========= size = 0x19 op = 0xef  return addr = 0x59c6f
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff900d8  2f 70 72 6f 63 2f 73 65 6c 66 2f 74 61 73 6b 2f  /proc/self/task/
+fff900e8  25 73 2f 73 74 61 74 75 73                       %s/status
+=======decode_59880========= size = 0xb op = 0xec  return addr = 0x59cf3
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff900b4  67 75 6d 2d 6a 73 2d 6c 6f 6f 70                 gum-js-loop
+=======decode_59880========= size = 0x5 op = 0xc3  return addr = 0x59d35
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff900ac  67 6d 61 69 6e                                   gmain
+=======decode_59880========= size = 0x19 op = 0xef  return addr = 0x59c6f
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff900d8  2f 70 72 6f 63 2f 73 65 6c 66 2f 74 61 73 6b 2f  /proc/self/task/
+fff900e8  25 73 2f 73 74 61 74 75 73                       %s/status
+=======decode_59880========= size = 0xb op = 0xec  return addr = 0x59cf3
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff900b4  67 75 6d 2d 6a 73 2d 6c 6f 6f 70                 gum-js-loop
+=======decode_59880========= size = 0x5 op = 0xc3  return addr = 0x59d35
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff900ac  67 6d 61 69 6e                                   gmain
+=======decode_59880========= size = 0x19 op = 0xef  return addr = 0x59c6f
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff900d8  2f 70 72 6f 63 2f 73 65 6c 66 2f 74 61 73 6b 2f  /proc/self/task/
+fff900e8  25 73 2f 73 74 61 74 75 73                       %s/status
+=======decode_59880========= size = 0xb op = 0xec  return addr = 0x59cf3
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff900b4  67 75 6d 2d 6a 73 2d 6c 6f 6f 70                 gum-js-loop
+=======decode_59880========= size = 0x5 op = 0xc3  return addr = 0x59d35
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff900ac  67 6d 61 69 6e                                   gmain
+=======decode_59880========= size = 0x19 op = 0xef  return addr = 0x59c6f
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff900d8  2f 70 72 6f 63 2f 73 65 6c 66 2f 74 61 73 6b 2f  /proc/self/task/
+fff900e8  25 73 2f 73 74 61 74 75 73                       %s/status
+=======decode_59880========= size = 0xb op = 0xec  return addr = 0x59cf3
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff900b4  67 75 6d 2d 6a 73 2d 6c 6f 6f 70                 gum-js-loop
+=======decode_59880========= size = 0x5 op = 0xc3  return addr = 0x59d35
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff900ac  67 6d 61 69 6e                                   gmain
+=======decode_59880========= size = 0x19 op = 0xef  return addr = 0x59c6f
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff900d8  2f 70 72 6f 63 2f 73 65 6c 66 2f 74 61 73 6b 2f  /proc/self/task/
+fff900e8  25 73 2f 73 74 61 74 75 73                       %s/status
+=======decode_59880========= size = 0xb op = 0xec  return addr = 0x59cf3
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff900b4  67 75 6d 2d 6a 73 2d 6c 6f 6f 70                 gum-js-loop
+=======decode_59880========= size = 0x5 op = 0xc3  return addr = 0x59d35
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff900ac  67 6d 61 69 6e                                   gmain
+=======decode_59880========= size = 0xd op = 0xbe  return addr = 0x59df9
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff900c4  2f 70 72 6f 63 2f 73 65 6c 66 2f 66 64           /proc/self/fd
+=======decode_59880========= size = 0x10 op = 0xf4  return addr = 0x59eb3
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff900d8  2f 70 72 6f 63 2f 73 65 6c 66 2f 66 64 2f 25 73  /proc/self/fd/%s
+=======decode_59880========= size = 0x10 op = 0xf4  return addr = 0x59eb3
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff900d8  2f 70 72 6f 63 2f 73 65 6c 66 2f 66 64 2f 25 73  /proc/self/fd/%s
+=======decode_59880========= size = 0x10 op = 0xf4  return addr = 0x59eb3
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff900d8  2f 70 72 6f 63 2f 73 65 6c 66 2f 66 64 2f 25 73  /proc/self/fd/%s
+=======decode_59880========= size = 0x9 op = 0xd4  return addr = 0x59f25
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff900b4  6c 69 6e 6a 65 63 74 6f 72                       linjector
+=======decode_59880========= size = 0x10 op = 0xf4  return addr = 0x59eb3
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff900d8  2f 70 72 6f 63 2f 73 65 6c 66 2f 66 64 2f 25 73  /proc/self/fd/%s
+=======decode_59880========= size = 0x9 op = 0xd4  return addr = 0x59f25
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff900b4  6c 69 6e 6a 65 63 74 6f 72                       linjector
+=======decode_59880========= size = 0x10 op = 0xf4  return addr = 0x59eb3
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff900d8  2f 70 72 6f 63 2f 73 65 6c 66 2f 66 64 2f 25 73  /proc/self/fd/%s
+=======decode_59880========= size = 0x9 op = 0xd4  return addr = 0x59f25
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff900b4  6c 69 6e 6a 65 63 74 6f 72                       linjector
+=======decode_59880========= size = 0x10 op = 0xf4  return addr = 0x59eb3
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff900d8  2f 70 72 6f 63 2f 73 65 6c 66 2f 66 64 2f 25 73  /proc/self/fd/%s
+=======decode_59880========= size = 0x9 op = 0xd4  return addr = 0x59f25
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff900b4  6c 69 6e 6a 65 63 74 6f 72                       linjector
+=======decode_59880========= size = 0x10 op = 0xf4  return addr = 0x59eb3
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff900d8  2f 70 72 6f 63 2f 73 65 6c 66 2f 66 64 2f 25 73  /proc/self/fd/%s
+=======decode_59880========= size = 0x9 op = 0xd4  return addr = 0x59f25
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff900b4  6c 69 6e 6a 65 63 74 6f 72                       linjector
+=======decode_59880========= size = 0x10 op = 0xf4  return addr = 0x59eb3
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff900d8  2f 70 72 6f 63 2f 73 65 6c 66 2f 66 64 2f 25 73  /proc/self/fd/%s
+=======decode_59880========= size = 0x9 op = 0xd4  return addr = 0x59f25
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff900b4  6c 69 6e 6a 65 63 74 6f 72                       linjector
+=======decode_59880========= size = 0x10 op = 0xf4  return addr = 0x59eb3
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff900d8  2f 70 72 6f 63 2f 73 65 6c 66 2f 66 64 2f 25 73  /proc/self/fd/%s
+=======decode_59880========= size = 0x9 op = 0xd4  return addr = 0x59f25
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff900b4  6c 69 6e 6a 65 63 74 6f 72                       linjector
+=======decode_59880========= size = 0x10 op = 0xf4  return addr = 0x59eb3
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff900d8  2f 70 72 6f 63 2f 73 65 6c 66 2f 66 64 2f 25 73  /proc/self/fd/%s
+=======decode_59880========= size = 0x9 op = 0xd4  return addr = 0x59f25
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff900b4  6c 69 6e 6a 65 63 74 6f 72                       linjector
+=======decode_59880========= size = 0x10 op = 0xf4  return addr = 0x59eb3
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff900d8  2f 70 72 6f 63 2f 73 65 6c 66 2f 66 64 2f 25 73  /proc/self/fd/%s
+=======decode_59880========= size = 0x9 op = 0xd4  return addr = 0x59f25
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff900b4  6c 69 6e 6a 65 63 74 6f 72                       linjector
+=======decode_59880========= size = 0x10 op = 0xf4  return addr = 0x59eb3
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff900d8  2f 70 72 6f 63 2f 73 65 6c 66 2f 66 64 2f 25 73  /proc/self/fd/%s
+=======decode_59880========= size = 0x9 op = 0xd4  return addr = 0x59f25
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff900b4  6c 69 6e 6a 65 63 74 6f 72                       linjector
+=======decode_59880========= size = 0x10 op = 0xf4  return addr = 0x59eb3
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff900d8  2f 70 72 6f 63 2f 73 65 6c 66 2f 66 64 2f 25 73  /proc/self/fd/%s
+=======decode_59880========= size = 0x9 op = 0xd4  return addr = 0x59f25
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff900b4  6c 69 6e 6a 65 63 74 6f 72                       linjector
+=======decode_59880========= size = 0x10 op = 0xf4  return addr = 0x59eb3
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff900d8  2f 70 72 6f 63 2f 73 65 6c 66 2f 66 64 2f 25 73  /proc/self/fd/%s
+=======decode_59880========= size = 0x9 op = 0xd4  return addr = 0x59f25
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff900b4  6c 69 6e 6a 65 63 74 6f 72                       linjector
+=======decode_59880========= size = 0x10 op = 0xf4  return addr = 0x59eb3
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff900d8  2f 70 72 6f 63 2f 73 65 6c 66 2f 66 64 2f 25 73  /proc/self/fd/%s
+=======decode_59880========= size = 0x9 op = 0xd4  return addr = 0x59f25
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff900b4  6c 69 6e 6a 65 63 74 6f 72                       linjector
+=======decode_59880========= size = 0x10 op = 0xf4  return addr = 0x59eb3
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff900d8  2f 70 72 6f 63 2f 73 65 6c 66 2f 66 64 2f 25 73  /proc/self/fd/%s
+=======decode_59880========= size = 0x9 op = 0xd4  return addr = 0x59f25
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff900b4  6c 69 6e 6a 65 63 74 6f 72                       linjector
+=======decode_59880========= size = 0x10 op = 0xf4  return addr = 0x59eb3
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff900d8  2f 70 72 6f 63 2f 73 65 6c 66 2f 66 64 2f 25 73  /proc/self/fd/%s
+=======decode_59880========= size = 0x9 op = 0xd4  return addr = 0x59f25
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff900b4  6c 69 6e 6a 65 63 74 6f 72                       linjector
+=======decode_59880========= size = 0x10 op = 0xf4  return addr = 0x59eb3
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff900d8  2f 70 72 6f 63 2f 73 65 6c 66 2f 66 64 2f 25 73  /proc/self/fd/%s
+=======decode_59880========= size = 0x9 op = 0xd4  return addr = 0x59f25
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff900b4  6c 69 6e 6a 65 63 74 6f 72                       linjector
+=======decode_59880========= size = 0x10 op = 0xf4  return addr = 0x59eb3
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff900d8  2f 70 72 6f 63 2f 73 65 6c 66 2f 66 64 2f 25 73  /proc/self/fd/%s
+=======decode_59880========= size = 0x9 op = 0xd4  return addr = 0x59f25
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff900b4  6c 69 6e 6a 65 63 74 6f 72                       linjector
+=======decode_59880========= size = 0x10 op = 0xf4  return addr = 0x59eb3
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff900d8  2f 70 72 6f 63 2f 73 65 6c 66 2f 66 64 2f 25 73  /proc/self/fd/%s
+=======decode_59880========= size = 0x9 op = 0xd4  return addr = 0x59f25
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff900b4  6c 69 6e 6a 65 63 74 6f 72                       linjector
+=======decode_59880========= size = 0x10 op = 0xf4  return addr = 0x59eb3
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff900d8  2f 70 72 6f 63 2f 73 65 6c 66 2f 66 64 2f 25 73  /proc/self/fd/%s
+=======decode_59880========= size = 0x9 op = 0xd4  return addr = 0x59f25
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff900b4  6c 69 6e 6a 65 63 74 6f 72                       linjector
+=======decode_59880========= size = 0x10 op = 0xf4  return addr = 0x59eb3
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff900d8  2f 70 72 6f 63 2f 73 65 6c 66 2f 66 64 2f 25 73  /proc/self/fd/%s
+=======decode_59880========= size = 0x9 op = 0xd4  return addr = 0x59f25
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff900b4  6c 69 6e 6a 65 63 74 6f 72                       linjector
+=======decode_59880========= size = 0x10 op = 0xf4  return addr = 0x59eb3
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff900d8  2f 70 72 6f 63 2f 73 65 6c 66 2f 66 64 2f 25 73  /proc/self/fd/%s
+=======decode_59880========= size = 0x9 op = 0xd4  return addr = 0x59f25
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff900b4  6c 69 6e 6a 65 63 74 6f 72                       linjector
+=======decode_59880========= size = 0x10 op = 0xf4  return addr = 0x59eb3
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff900d8  2f 70 72 6f 63 2f 73 65 6c 66 2f 66 64 2f 25 73  /proc/self/fd/%s
+=======decode_59880========= size = 0x9 op = 0xd4  return addr = 0x59f25
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff900b4  6c 69 6e 6a 65 63 74 6f 72                       linjector
+=======decode_59880========= size = 0x10 op = 0xf4  return addr = 0x59eb3
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff900d8  2f 70 72 6f 63 2f 73 65 6c 66 2f 66 64 2f 25 73  /proc/self/fd/%s
+=======decode_59880========= size = 0x9 op = 0xd4  return addr = 0x59f25
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff900b4  6c 69 6e 6a 65 63 74 6f 72                       linjector
+=======decode_59880========= size = 0x10 op = 0xf4  return addr = 0x59eb3
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff900d8  2f 70 72 6f 63 2f 73 65 6c 66 2f 66 64 2f 25 73  /proc/self/fd/%s
+=======decode_59880========= size = 0x9 op = 0xd4  return addr = 0x59f25
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff900b4  6c 69 6e 6a 65 63 74 6f 72                       linjector
+=======decode_59880========= size = 0x10 op = 0xf4  return addr = 0x59eb3
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff900d8  2f 70 72 6f 63 2f 73 65 6c 66 2f 66 64 2f 25 73  /proc/self/fd/%s
+=======decode_59880========= size = 0x9 op = 0xd4  return addr = 0x59f25
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff900b4  6c 69 6e 6a 65 63 74 6f 72                       linjector
+=======decode_59880========= size = 0x10 op = 0xf4  return addr = 0x59eb3
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff900d8  2f 70 72 6f 63 2f 73 65 6c 66 2f 66 64 2f 25 73  /proc/self/fd/%s
+=======decode_59880========= size = 0x9 op = 0xd4  return addr = 0x59f25
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff900b4  6c 69 6e 6a 65 63 74 6f 72                       linjector
+=======decode_59880========= size = 0x10 op = 0xf4  return addr = 0x59eb3
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff900d8  2f 70 72 6f 63 2f 73 65 6c 66 2f 66 64 2f 25 73  /proc/self/fd/%s
+=======decode_59880========= size = 0x9 op = 0xd4  return addr = 0x59f25
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff900b4  6c 69 6e 6a 65 63 74 6f 72                       linjector
+=======decode_59880========= size = 0x10 op = 0xf4  return addr = 0x59eb3
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff900d8  2f 70 72 6f 63 2f 73 65 6c 66 2f 66 64 2f 25 73  /proc/self/fd/%s
+=======decode_59880========= size = 0x9 op = 0xd4  return addr = 0x59f25
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff900b4  6c 69 6e 6a 65 63 74 6f 72                       linjector
+=======decode_59880========= size = 0x10 op = 0xf4  return addr = 0x59eb3
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff900d8  2f 70 72 6f 63 2f 73 65 6c 66 2f 66 64 2f 25 73  /proc/self/fd/%s
+=======decode_59880========= size = 0x9 op = 0xd4  return addr = 0x59f25
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff900b4  6c 69 6e 6a 65 63 74 6f 72                       linjector
+=======decode_59880========= size = 0x10 op = 0xf4  return addr = 0x59eb3
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff900d8  2f 70 72 6f 63 2f 73 65 6c 66 2f 66 64 2f 25 73  /proc/self/fd/%s
+=======decode_59880========= size = 0x9 op = 0xd4  return addr = 0x59f25
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff900b4  6c 69 6e 6a 65 63 74 6f 72                       linjector
+=======decode_59880========= size = 0x10 op = 0xf4  return addr = 0x59eb3
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff900d8  2f 70 72 6f 63 2f 73 65 6c 66 2f 66 64 2f 25 73  /proc/self/fd/%s
+=======decode_59880========= size = 0x9 op = 0xd4  return addr = 0x59f25
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff900b4  6c 69 6e 6a 65 63 74 6f 72                       linjector
+=======decode_59880========= size = 0x10 op = 0xf4  return addr = 0x59eb3
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff900d8  2f 70 72 6f 63 2f 73 65 6c 66 2f 66 64 2f 25 73  /proc/self/fd/%s
+=======decode_59880========= size = 0x9 op = 0xd4  return addr = 0x59f25
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff900b4  6c 69 6e 6a 65 63 74 6f 72                       linjector
+=======decode_59880========= size = 0x10 op = 0xf4  return addr = 0x59eb3
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff900d8  2f 70 72 6f 63 2f 73 65 6c 66 2f 66 64 2f 25 73  /proc/self/fd/%s
+=======decode_59880========= size = 0x9 op = 0xd4  return addr = 0x59f25
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff900b4  6c 69 6e 6a 65 63 74 6f 72                       linjector
+=======decode_59880========= size = 0x10 op = 0xf4  return addr = 0x59eb3
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff900d8  2f 70 72 6f 63 2f 73 65 6c 66 2f 66 64 2f 25 73  /proc/self/fd/%s
+=======decode_59880========= size = 0x9 op = 0xd4  return addr = 0x59f25
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff900b4  6c 69 6e 6a 65 63 74 6f 72                       linjector
+=======decode_59880========= size = 0x10 op = 0xf4  return addr = 0x59eb3
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff900d8  2f 70 72 6f 63 2f 73 65 6c 66 2f 66 64 2f 25 73  /proc/self/fd/%s
+=======decode_59880========= size = 0x9 op = 0xd4  return addr = 0x59f25
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff900b4  6c 69 6e 6a 65 63 74 6f 72                       linjector
+=======decode_59880========= size = 0x10 op = 0xf4  return addr = 0x59eb3
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff900d8  2f 70 72 6f 63 2f 73 65 6c 66 2f 66 64 2f 25 73  /proc/self/fd/%s
+=======decode_59880========= size = 0x9 op = 0xd4  return addr = 0x59f25
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff900b4  6c 69 6e 6a 65 63 74 6f 72                       linjector
+=======decode_59880========= size = 0x10 op = 0xf4  return addr = 0x59eb3
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff900d8  2f 70 72 6f 63 2f 73 65 6c 66 2f 66 64 2f 25 73  /proc/self/fd/%s
+=======decode_59880========= size = 0x9 op = 0xd4  return addr = 0x59f25
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff900b4  6c 69 6e 6a 65 63 74 6f 72                       linjector
+=======decode_59880========= size = 0x10 op = 0xf4  return addr = 0x59eb3
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff900d8  2f 70 72 6f 63 2f 73 65 6c 66 2f 66 64 2f 25 73  /proc/self/fd/%s
+=======decode_59880========= size = 0x9 op = 0xd4  return addr = 0x59f25
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff900b4  6c 69 6e 6a 65 63 74 6f 72                       linjector
+=======decode_59880========= size = 0x10 op = 0xf4  return addr = 0x59eb3
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff900d8  2f 70 72 6f 63 2f 73 65 6c 66 2f 66 64 2f 25 73  /proc/self/fd/%s
+=======decode_59880========= size = 0x9 op = 0xd4  return addr = 0x59f25
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff900b4  6c 69 6e 6a 65 63 74 6f 72                       linjector
+=======decode_59880========= size = 0x10 op = 0xf4  return addr = 0x59eb3
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff900d8  2f 70 72 6f 63 2f 73 65 6c 66 2f 66 64 2f 25 73  /proc/self/fd/%s
+=======decode_59880========= size = 0x9 op = 0xd4  return addr = 0x59f25
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff900b4  6c 69 6e 6a 65 63 74 6f 72                       linjector
+=======decode_59880========= size = 0x10 op = 0xf4  return addr = 0x59eb3
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff900d8  2f 70 72 6f 63 2f 73 65 6c 66 2f 66 64 2f 25 73  /proc/self/fd/%s
+=======decode_59880========= size = 0x9 op = 0xd4  return addr = 0x59f25
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff900b4  6c 69 6e 6a 65 63 74 6f 72                       linjector
+=======decode_59880========= size = 0x10 op = 0xf4  return addr = 0x59eb3
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff900d8  2f 70 72 6f 63 2f 73 65 6c 66 2f 66 64 2f 25 73  /proc/self/fd/%s
+=======decode_59880========= size = 0x9 op = 0xd4  return addr = 0x59f25
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff900b4  6c 69 6e 6a 65 63 74 6f 72                       linjector
+=======decode_59880========= size = 0x10 op = 0xf4  return addr = 0x59eb3
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff900d8  2f 70 72 6f 63 2f 73 65 6c 66 2f 66 64 2f 25 73  /proc/self/fd/%s
+=======decode_59880========= size = 0x9 op = 0xd4  return addr = 0x59f25
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff900b4  6c 69 6e 6a 65 63 74 6f 72                       linjector
+=======decode_59880========= size = 0x10 op = 0xf4  return addr = 0x59eb3
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff900d8  2f 70 72 6f 63 2f 73 65 6c 66 2f 66 64 2f 25 73  /proc/self/fd/%s
+=======decode_59880========= size = 0x9 op = 0xd4  return addr = 0x59f25
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff900b4  6c 69 6e 6a 65 63 74 6f 72                       linjector
+=======decode_59880========= size = 0x10 op = 0xf4  return addr = 0x59eb3
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff900d8  2f 70 72 6f 63 2f 73 65 6c 66 2f 66 64 2f 25 73  /proc/self/fd/%s
+=======decode_59880========= size = 0x9 op = 0xd4  return addr = 0x59f25
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff900b4  6c 69 6e 6a 65 63 74 6f 72                       linjector
+=======decode_59880========= size = 0x10 op = 0xf4  return addr = 0x59eb3
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff900d8  2f 70 72 6f 63 2f 73 65 6c 66 2f 66 64 2f 25 73  /proc/self/fd/%s
+=======decode_59880========= size = 0x9 op = 0xd4  return addr = 0x59f25
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff900b4  6c 69 6e 6a 65 63 74 6f 72                       linjector
+=======decode_59880========= size = 0x10 op = 0xf4  return addr = 0x59eb3
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff900d8  2f 70 72 6f 63 2f 73 65 6c 66 2f 66 64 2f 25 73  /proc/self/fd/%s
+=======decode_59880========= size = 0x9 op = 0xd4  return addr = 0x59f25
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff900b4  6c 69 6e 6a 65 63 74 6f 72                       linjector
+=======decode_59880========= size = 0x10 op = 0xf4  return addr = 0x59eb3
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff900d8  2f 70 72 6f 63 2f 73 65 6c 66 2f 66 64 2f 25 73  /proc/self/fd/%s
+=======decode_59880========= size = 0x9 op = 0xd4  return addr = 0x59f25
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff900b4  6c 69 6e 6a 65 63 74 6f 72                       linjector
+=======decode_59880========= size = 0x10 op = 0xf4  return addr = 0x59eb3
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff900d8  2f 70 72 6f 63 2f 73 65 6c 66 2f 66 64 2f 25 73  /proc/self/fd/%s
+=======decode_59880========= size = 0x9 op = 0xd4  return addr = 0x59f25
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff900b4  6c 69 6e 6a 65 63 74 6f 72                       linjector
+=======decode_59880========= size = 0x10 op = 0xf4  return addr = 0x59eb3
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff900d8  2f 70 72 6f 63 2f 73 65 6c 66 2f 66 64 2f 25 73  /proc/self/fd/%s
+=======decode_59880========= size = 0x9 op = 0xd4  return addr = 0x59f25
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff900b4  6c 69 6e 6a 65 63 74 6f 72                       linjector
+=======decode_59880========= size = 0x10 op = 0xf4  return addr = 0x59eb3
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff900d8  2f 70 72 6f 63 2f 73 65 6c 66 2f 66 64 2f 25 73  /proc/self/fd/%s
+=======decode_59880========= size = 0x9 op = 0xd4  return addr = 0x59f25
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff900b4  6c 69 6e 6a 65 63 74 6f 72                       linjector
+=======decode_59880========= size = 0x10 op = 0xf4  return addr = 0x59eb3
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff900d8  2f 70 72 6f 63 2f 73 65 6c 66 2f 66 64 2f 25 73  /proc/self/fd/%s
+=======decode_59880========= size = 0x9 op = 0xd4  return addr = 0x59f25
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff900b4  6c 69 6e 6a 65 63 74 6f 72                       linjector
+=======decode_59880========= size = 0x10 op = 0xf4  return addr = 0x59eb3
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff900d8  2f 70 72 6f 63 2f 73 65 6c 66 2f 66 64 2f 25 73  /proc/self/fd/%s
+=======decode_59880========= size = 0x9 op = 0xd4  return addr = 0x59f25
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff900b4  6c 69 6e 6a 65 63 74 6f 72                       linjector
+=======decode_59880========= size = 0x10 op = 0xf4  return addr = 0x59eb3
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff900d8  2f 70 72 6f 63 2f 73 65 6c 66 2f 66 64 2f 25 73  /proc/self/fd/%s
+=======decode_59880========= size = 0x9 op = 0xd4  return addr = 0x59f25
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff900b4  6c 69 6e 6a 65 63 74 6f 72                       linjector
+=======decode_59880========= size = 0x10 op = 0xf4  return addr = 0x59eb3
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff900d8  2f 70 72 6f 63 2f 73 65 6c 66 2f 66 64 2f 25 73  /proc/self/fd/%s
+=======decode_59880========= size = 0x9 op = 0xd4  return addr = 0x59f25
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff900b4  6c 69 6e 6a 65 63 74 6f 72                       linjector
+=======decode_59880========= size = 0x10 op = 0xf4  return addr = 0x59eb3
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff900d8  2f 70 72 6f 63 2f 73 65 6c 66 2f 66 64 2f 25 73  /proc/self/fd/%s
+=======decode_59880========= size = 0x9 op = 0xd4  return addr = 0x59f25
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff900b4  6c 69 6e 6a 65 63 74 6f 72                       linjector
+=======decode_59880========= size = 0x10 op = 0xf4  return addr = 0x59eb3
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff900d8  2f 70 72 6f 63 2f 73 65 6c 66 2f 66 64 2f 25 73  /proc/self/fd/%s
+=======decode_59880========= size = 0x9 op = 0xd4  return addr = 0x59f25
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff900b4  6c 69 6e 6a 65 63 74 6f 72                       linjector
+=======decode_59880========= size = 0x10 op = 0xf4  return addr = 0x59eb3
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff900d8  2f 70 72 6f 63 2f 73 65 6c 66 2f 66 64 2f 25 73  /proc/self/fd/%s
+=======decode_59880========= size = 0x9 op = 0xd4  return addr = 0x59f25
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff900b4  6c 69 6e 6a 65 63 74 6f 72                       linjector
+=======decode_59880========= size = 0x10 op = 0xf4  return addr = 0x59eb3
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff900d8  2f 70 72 6f 63 2f 73 65 6c 66 2f 66 64 2f 25 73  /proc/self/fd/%s
+=======decode_59880========= size = 0x9 op = 0xd4  return addr = 0x59f25
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff900b4  6c 69 6e 6a 65 63 74 6f 72                       linjector
+=======decode_59880========= size = 0x10 op = 0xf4  return addr = 0x59eb3
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff900d8  2f 70 72 6f 63 2f 73 65 6c 66 2f 66 64 2f 25 73  /proc/self/fd/%s
+=======decode_59880========= size = 0x9 op = 0xd4  return addr = 0x59f25
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff900b4  6c 69 6e 6a 65 63 74 6f 72                       linjector
+=======decode_59880========= size = 0x10 op = 0xf4  return addr = 0x59eb3
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff900d8  2f 70 72 6f 63 2f 73 65 6c 66 2f 66 64 2f 25 73  /proc/self/fd/%s
+=======decode_59880========= size = 0x9 op = 0xd4  return addr = 0x59f25
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff900b4  6c 69 6e 6a 65 63 74 6f 72                       linjector
+=======decode_59880========= size = 0x10 op = 0xf4  return addr = 0x59eb3
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff900d8  2f 70 72 6f 63 2f 73 65 6c 66 2f 66 64 2f 25 73  /proc/self/fd/%s
+=======decode_59880========= size = 0x9 op = 0xd4  return addr = 0x59f25
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff900b4  6c 69 6e 6a 65 63 74 6f 72                       linjector
+=======decode_59880========= size = 0x10 op = 0xf4  return addr = 0x59eb3
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff900d8  2f 70 72 6f 63 2f 73 65 6c 66 2f 66 64 2f 25 73  /proc/self/fd/%s
+=======decode_59880========= size = 0x9 op = 0xd4  return addr = 0x59f25
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff900b4  6c 69 6e 6a 65 63 74 6f 72                       linjector
+=======decode_59880========= size = 0x10 op = 0xf4  return addr = 0x59eb3
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff900d8  2f 70 72 6f 63 2f 73 65 6c 66 2f 66 64 2f 25 73  /proc/self/fd/%s
+=======decode_59880========= size = 0x9 op = 0xd4  return addr = 0x59f25
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff900b4  6c 69 6e 6a 65 63 74 6f 72                       linjector
+=======decode_59880========= size = 0x10 op = 0xf4  return addr = 0x59eb3
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff900d8  2f 70 72 6f 63 2f 73 65 6c 66 2f 66 64 2f 25 73  /proc/self/fd/%s
+=======decode_59880========= size = 0x9 op = 0xd4  return addr = 0x59f25
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff900b4  6c 69 6e 6a 65 63 74 6f 72                       linjector
+=======decode_59880========= size = 0x10 op = 0xf4  return addr = 0x59eb3
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff900d8  2f 70 72 6f 63 2f 73 65 6c 66 2f 66 64 2f 25 73  /proc/self/fd/%s
+=======decode_59880========= size = 0x9 op = 0xd4  return addr = 0x59f25
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff900b4  6c 69 6e 6a 65 63 74 6f 72                       linjector
+=======decode_59880========= size = 0x10 op = 0xf4  return addr = 0x59eb3
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff900d8  2f 70 72 6f 63 2f 73 65 6c 66 2f 66 64 2f 25 73  /proc/self/fd/%s
+=======decode_59880========= size = 0x9 op = 0xd4  return addr = 0x59f25
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff900b4  6c 69 6e 6a 65 63 74 6f 72                       linjector
+=======decode_59880========= size = 0x10 op = 0xf4  return addr = 0x59eb3
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff900d8  2f 70 72 6f 63 2f 73 65 6c 66 2f 66 64 2f 25 73  /proc/self/fd/%s
+=======decode_59880========= size = 0x9 op = 0xd4  return addr = 0x59f25
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff900b4  6c 69 6e 6a 65 63 74 6f 72                       linjector
+=======decode_59880========= size = 0x10 op = 0xf4  return addr = 0x59eb3
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff900d8  2f 70 72 6f 63 2f 73 65 6c 66 2f 66 64 2f 25 73  /proc/self/fd/%s
+=======decode_59880========= size = 0x9 op = 0xd4  return addr = 0x59f25
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff900b4  6c 69 6e 6a 65 63 74 6f 72                       linjector
+=======decode_str========= size = 0x18 op = 0xd6  return addr = 0x14397
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff903a0  72 6f 2e 62 75 69 6c 64 2e 76 65 72 73 69 6f 6e  ro.build.version
+fff903b0  2e 72 65 6c 65 61 73 65                          .release
+=======decode_str========= size = 0x19 op = 0xe5  return addr = 0x14441
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff903bc  72 6f 2e 62 75 69 6c 64 2e 76 65 72 73 69 6f 6e  ro.build.version
+fff903cc  2e 63 6f 64 65 6e 61 6d 65                       .codename
+=======decode_str========= size = 0x14 op = 0xce  return addr = 0x14539
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff90388  72 6f 2e 62 75 69 6c 64 2e 76 65 72 73 69 6f 6e  ro.build.version
+fff90398  2e 73 64 6b                                      .sdk
+=======decode_str========= size = 0x12 op = 0xba  return addr = 0x15c81
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+fff9041c  72 6f 2e 70 72 6f 64 75 63 74 2e 63 70 75 2e 61  ro.product.cpu.a
+fff9042c  62 69                                            bi
+Connection terminated
+
+Thank you for using Frida!
